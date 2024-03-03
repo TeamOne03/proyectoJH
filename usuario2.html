@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <meta name="description" content="Jardinería Hernández, tranformando tu patio, contamos con una gran variedad de servicios...">
+    <meta name="keywords" content="Jardinería, Servicios de Jardinería, Plantas, Jardin">
+    <link rel="icon" href="imagenes/iconoverde.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Link del css falta -->
+</head>
+<body>
+    <div id="contenedor">
+    <header>
+        <a href="index.html">
+            <figure class="logo__Empresa">
+                <img src="imagenes/logoNombre.jpg" alt="Logo de la Jardinería Hernández" title="Logo de la Jardinería Hernández">
+            </figure>
+        </a>
+        <!--<h1>Jardinería Hernández</h1>-->
+        <nav class="menu">
+            <!-- Menu-->
+            <ul>
+                <li class="menu__Empresa"><a href="index.html">Inicio</a></li>
+                <li class="menu__Empresa"><a href="servicios.html">Servicios</a></li>
+                <li class="menu__Empresa"><a href="catalogo.html">Catalogo</a>
+                    <ul>
+                        <li><a href="plantas.html">Plantas</a></li>
+                        <li><a href="fertilizantes.html">Fertilizantes</a></li>
+                        <li><a href="herramientas.html">herramientas</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li class="menu__Empresa"><a href="proyectos.html">Proyectos</a></li>
+                <li class="menu__Empresa"><a href="consejos.html">Consejos</a></li>
+                <li class="menu__Empresa"><a href="contactos.html">Contacto</a></li>
+                <li class="menu__Empresa"><a href="nosotros.html">Nosotros</a></li>
+                <li class="menu__Empresa"><a href="carrito.html">
+                    <figure>
+                        <img src="imagenes/iconocarrito.png" alt="usuario" width="45">
+                    </figure>
+                </a></li>
+                <li class="menu__Empresa"><a href="usuario.html">
+                    <figure>
+                        <img src="imagenes/usuario.jpg" alt="usuario" width="45">
+                    </figure>
+                </a></li>
+            </ul>
+        </nav>
+ </header>
+<!-- Ya esto aki es para registrarse  -->
+ <main>
+  <section>
+    <article>
+    <form>
+        <label for="nom">Nombre:</label>
+        <input type="text" id="nom" placeholder="Escruba su nombre" autocomplete="on" autofocus required>
+
+        <label for="ape">Apellido:</label>
+        <input type="text" placeholder="Escruba su apellido" id="ape"  autocomplete="off" required>
+        <br>
+    <label for="correo">Correo electrónico</label>
+    <input type="email" id="correo" multiple>
+    <br>
+    <label for="pass">Contraseña</label>
+    <input type="password" id="pass" maxlength="12" minlength="4" >
+    <br>
+    <label for="pass">Mostrar</label>
+    <input type="password" id="pass" maxlength="12" minlength="4" >
+   
+    <h4>Registrarse</h4>
+    </form>
+</article>
+  </section>
+ </main>
+ <aside class="redes">
+        <h3 class="sub__redes">Siguenos en:</h3>
+        <figure class="img__redes">
+            <!-- Enlace en el logo de la aplicacion, ademas ese instagram es real de la compañia -->
+            <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="imagenes/instgram.png" alt="instagram" width="50">
+            </a>
+            <!--<a href="https://www.youtube.com" target="_blank">
+                <img src="imagenes/youtube.png" alt="YouTube" width="35">
+            </a>
+            
+            Este apartado lo deje para ver si creo un mini canal en youtube con los videos que tengo.-->
+        </figure>
+    </aside>
+    <footer class="footer">
+        <p class="texto__footer">&copy; Todos los derechos reservados - Jardinería Hernández 2024.</p>
+    </footer>
+ 
+    </div>
+</body>
+</html>
