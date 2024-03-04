@@ -7,7 +7,7 @@
     <meta name="description" content="Jardinería Hernández, tranformando tu patio, contamos con una gran variedad de servicios...">
     <meta name="keywords" content="Jardinería, Servicios de Jardinería, Plantas, Jardin">
     <link rel="icon" href="imagenes/iconoverde.png">
-    <!-- Link del css falta -->
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 <!-- Colocar contenedores de ser necesarios (ME GUSTA LA IDEA DE UN FONDO CON ALGUNA IMAGEN DE PLANTA O UN TONO VERDE PARA TRABJAR EN EL CONTENEDOR EN COLOR BLACO, ademas de seccionar las partes por contenedores y usar diferentes tonos de la misma paleta para ver como se ve.)-->
@@ -21,11 +21,11 @@
         <!--<h1>Jardinería Hernández</h1>-->
         <nav class="menu">
             <!-- Menu-->
-            <ul>
+            <ul class="menu__horizontal">
                 <li class="menu__Empresa"><a href="index.html">Inicio</a></li>
                 <li class="menu__Empresa"><a href="servicios.html">Servicios</a></li>
-                <li class="menu__Empresa"><a href="catalogo.html">Catalogo</a>
-                    <ul>
+                <li class="menu__Empresa"><a href="catálogo.html">Catálogo</a>
+                    <ul class="menu__vertical">
                         <li><a href="plantas.html">Plantas</a></li>
                         <li><a href="fertilizantes.html">Fertilizantes</a></li>
                         <li><a href="herramientas.html">herramientas</a></li>
@@ -36,109 +36,103 @@
                 <li class="menu__Empresa"><a href="consejos.html">Consejos</a></li>
                 <li class="menu__Empresa"><a href="contactos.html">Contacto</a></li>
                 <li class="menu__Empresa"><a href="nosotros.html">Nosotros</a></li>
-                <li class="menu__Empresa"><a href="carrito.html">
-                    <figure>
-                        <img src="imagenes/iconocarrito.png" alt="usuario" width="45">
-                    </figure>
-                </a></li>
-                <li class="menu__Empresa"><a href="usuario.html">
-                    <figure>
-                        <img src="imagenes/usuario.jpg" alt="usuario" width="45">
-                    </figure>
-                </a></li>
+                <li class="menu__Empresa"><a href="carrito.html">carrito</a></li>
+                <li class="menu__Empresa"><a href="usuario.html">Usuario</a></li>
             </ul>
         </nav>
         <!-- FALTA EL ICONO DEL USUARIO, (PREGUNTAR AL PROFE SOBRE ESO)-->
     </header>
-    <main class="info">
-        <h2>Sección de información</h2>
-        <!--Imagenes que tendran link para enviar a los proyectos mas recientes de la empresa-->
-        <a href="#">
-            <figure class="info__imagen">
-                <img src="imagenes/jardin1.jpg" alt="Jardin">
-                <img src="imagenes/trabjador.jpg" alt="Hombre trabajando en el jardin">
-                <img src="imagenes/jardin2.jpg" alt="jardin">
-                <img src="imagenes/trabjador2.jpg" alt="Hombre trabajando en el jardin">
-            </figure>
-        </a>
-        <section class="infoText">
-            <h2>Información que podria interesarte</h2>
-            <figure class="img__infoText">
-                <img src="imagenes/controlPlagas.jpg" alt="Control de plagas">
-                <figcaption></figcaption>
-            </figure>
-            <article class="text__infoText">
-                <!-- Informacion de los temas elegidos-->
-                <h3 class="text__subtitulo">Plagas mundiales que afectan a los cultivos, la silvicultura y los ecosistemas</h3>
-                <p class="text__texto">Desde su domesticación, hace unos 10 000 años, los cultivos se han visto amenazados por una multitud de plagas que provocan pérdidas de rendimiento que, a su vez, a menudo conducen al hambre y al malestar social. En promedio, a escala mundial, entre el 10% y el 28% de la producción de cultivos se pierde a causa de las plagas (Savary et al., 2019). Además, se observan otras pérdidas posteriores a la cosecha, con los peores escenarios en los países en desarrollo. Por otra parte, además de las pérdidas, la presencia de micotoxinas (toxinas producidas por hongos) en los alimentos y los piensos puede amenazar gravemente la salud de las personas y el ganado (Magan, Medina y Aldred, 2011; Van Der Fels-Klerx, Liu y Battilani, 2016).</p>
-            </article>
-            <figure class="img__infoText">
-                <img src="imagenes/suelo.jpg" alt="Suelos">
-                <figcaption></figcaption>
-            </figure>
-            <article class="text__infoText">
-                <!-- Informacion de los temas elegidos-->
-                <h3 class="text__subtitulo">Suelos</h3>
-                <p class="text__texto">En República Dominicana el estudio de suelo se realizó en 1967, en el marco del proyecto “Reconocimiento y Evaluación de los Recursos Naturales de la República Dominicana”, auspiciado por la Organización de los Estados Americanos (OEA).
-                El principal objetivo del estudio fue levantar y poner a disposición de las autoridades dominicanas una base científico-técnica de informaciones útiles para la clasificación de los suelos dominicanos, que sirviera de herramienta para la planificación del desarrollo y extensión agrícola.
-                Con el levantamiento de informaciones sobre los suelos, y el análisis de fotografías aéreas a escala 1:60,000, se delimitaron unidades geomorfológicas que corresponden a asociaciones de suelos y en algunos casos a Series.
-                Se determinaron los perfiles representativos de las unidades de suelos establecidas, con su respectiva toma de muestras para análisis físico y químico.
-                El estudio estableció más de cien asociaciones de suelos que fueron agrupadas según las principales características de los suelos predominantes, resultando diez grandes grupos: Suelos de Sabanas; Suelos Arcillosos no Calcáreos; Suelos de origen Calcáreo; Suelos de origen Igneo, Volcánico y Metamórfico; Suelos Aluviales Recientes; Ciénagas; Playa Costera y Dunas; Suelos Orgánicos; Terrenos Cársicos; y Terrenos Escabrosos de Montaña.</p>
-            </article>
-            <figure class="img__infoText">
-                <img src="imagenes/impAgua.jpg" alt="Importancia del agua">
-                <figcaption></figcaption>
-            </figure>
-            <article class="text__infoText">
-                <!-- Informacion de los temas elegidos-->
-                <h3 class="text__subtitulo">6 Razones que evidencian la importancia del agua en las plantas</h3>
-                <p class="text__texto"><b>Germinación de semillas</b><br><br>
-                Según Growing Anything, germinación es el proceso de una planta recién nacida que emerge de su semilla. Esta necesita agua para activar las enzimas encargadas de dirigir el proceso de germinación. También ayuda a la semilla a que pueda hincharse y suavizarse para permitir que la planta salga.
-                
-                <br><br><b>Proceso de fotosíntesis</b><br><br>
-                Este proceso es por medio del cual las plantas preparan su alimento para sobrevivir y crecer. El agua es el centro de este proceso ya que necesita el hidrógeno presente en esta. Además también necesitan una pequeña cantidad de oxígeno para facilitar la fotosíntesis, el cual también obtienen del agua. Para esto también necesita sol y dióxido de carbono.
-                
-                <br><br><b>Translocación</b><br><br>
-                Se le denomina así al movimiento del agua a través de las diferentes partes de la planta. Por medio de este se transportan los nutrientes y minerales desde el suelo hasta las hojas. Esto se da gracias a la acción capilar, la cual utiliza la tensión del agua para moverse alrededor de toda la estructura.
-                
-                <br><br><b>Estructura de la planta</b><br><br>
-                Las plantas no tienen un esqueleto interno o externo que les ayuden a tener una estructura. Por lo tanto hacen uso de la presión del agua en sus células para crecer y mantenerse rígidas. Esta presión recibe el nombre de “turgencia”.
-                
-                Esta fuerza conserva una buena flexibilidad por ser derivada de una fuente líquida. Lo cual le permite que se adapte a su entorno doblándose con el viento y moviéndose en dirección del sol para absorber la mayor cantidad de energía para realizar la fotosíntesis.
-
-                <br><br><b>Transpiración</b><br><br>
-                La transpiración es el proceso mediante el cual el agua es arrastrada desde las raíces hasta el tallo y fuera de la planta. Es útil para permitir la entrada de dióxido de carbono desde el aire, enfriar la planta y ayudar que fluyan los nutrientes por toda la planta.
-
-                <br><br><b>Creación de hábitats</b><br><br>
-                Como mencionamos anteriormente en el papel del agua en los ecosistemas existe una gran cantidad de seres vivos que necesitan un entorno acuático para sobrevivir. Entre estos se encuentran los estanques, ríos, lagos y mares. Donde habitan miles de especies de plantas que necesitan condiciones húmedas para crecer.</p>
-            </article class="img">
-            <figure class="img__infoText">
-                <img src="imagenes/terraza3foto.jpg" alt="Terrazas y jardines pequeños">
-                <figcaption></figcaption>
-            </figure>
-            <article class="text__infoText">
-                <!-- Informacion de los temas elegidos-->
-                <h3 class="text__subtitulo">Diseñar y aprovechar al máximo jardines y terrazas pequeños</h3>
-                <p class="text__texto">Planificación inteligente del espacio:
-                Antes de comenzar a diseñar tu jardín o terraza, es fundamental realizar una planificación inteligente. Toma medidas precisas del área disponible y analiza cómo aprovechar cada centímetro. Por ejemplo, considerando el uso de macetas colgantes o jardines verticales para añadir vegetación y frescura sin ocupar mucho espacio y dejando el suelo más diáfano.</p>
-            </article>
-        </section>
-    </main>
-    <!-- un aside para las redes sociales, aunque aun no estoy muy segura-->
-    <aside class="redes">
-        <h3 class="sub__redes">Siguenos en:</h3>
-        <figure class="img__redes">
-            <!-- Enlace en el logo de la aplicacion, ademas ese instagram es real de la compañia -->
-            <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                <img src="imagenes/instgram.png" alt="instagram" width="50">
+    <div id="contenedor">
+        <main class="info">
+            <h2>Sección de información</h2>
+            <!--Imagenes que tendran link para enviar a los proyectos mas recientes de la empresa-->
+            <a href="#">
+                <figure class="info__imagen">
+                    <img src="imagenes/jardin1.jpg" alt="Jardin">
+                    <img src="imagenes/trabjador.jpg" alt="Hombre trabajando en el jardin">
+                    <img src="imagenes/jardin2.jpg" alt="jardin">
+                    <img src="imagenes/trabjador2.jpg" alt="Hombre trabajando en el jardin">
+                </figure>
             </a>
-            <!--<a href="https://www.youtube.com" target="_blank">
-                <img src="imagenes/youtube.png" alt="YouTube" width="35">
-            </a>
-            
-            Este apartado lo deje para ver si creo un mini canal en youtube con los videos que tengo.-->
-        </figure>
-    </aside>
+            <section class="infoText">
+                <h2>Información que podria interesarte</h2>
+                <figure class="img__infoText">
+                    <img src="imagenes/controlPlagas.jpg" alt="Control de plagas">
+                    <figcaption></figcaption>
+                </figure>
+                <article class="text__infoText">
+                    <!-- Informacion de los temas elegidos-->
+                    <h3 class="text__subtitulo">Plagas mundiales que afectan a los cultivos, la silvicultura y los ecosistemas</h3>
+                    <p class="text__texto">Desde su domesticación, hace unos 10 000 años, los cultivos se han visto amenazados por una multitud de plagas que provocan pérdidas de rendimiento que, a su vez, a menudo conducen al hambre y al malestar social. En promedio, a escala mundial, entre el 10% y el 28% de la producción de cultivos se pierde a causa de las plagas (Savary et al., 2019). Además, se observan otras pérdidas posteriores a la cosecha, con los peores escenarios en los países en desarrollo. Por otra parte, además de las pérdidas, la presencia de micotoxinas (toxinas producidas por hongos) en los alimentos y los piensos puede amenazar gravemente la salud de las personas y el ganado (Magan, Medina y Aldred, 2011; Van Der Fels-Klerx, Liu y Battilani, 2016).</p>
+                </article>
+                <figure class="img__infoText">
+                    <img src="imagenes/suelo.jpg" alt="Suelos">
+                    <figcaption></figcaption>
+                </figure>
+                <article class="text__infoText">
+                    <!-- Informacion de los temas elegidos-->
+                    <h3 class="text__subtitulo">Suelos</h3>
+                    <p class="text__texto">En República Dominicana el estudio de suelo se realizó en 1967, en el marco del proyecto “Reconocimiento y Evaluación de los Recursos Naturales de la República Dominicana”, auspiciado por la Organización de los Estados Americanos (OEA).
+                    El principal objetivo del estudio fue levantar y poner a disposición de las autoridades dominicanas una base científico-técnica de informaciones útiles para la clasificación de los suelos dominicanos, que sirviera de herramienta para la planificación del desarrollo y extensión agrícola.
+                    Con el levantamiento de informaciones sobre los suelos, y el análisis de fotografías aéreas a escala 1:60,000, se delimitaron unidades geomorfológicas que corresponden a asociaciones de suelos y en algunos casos a Series.
+                    Se determinaron los perfiles representativos de las unidades de suelos establecidas, con su respectiva toma de muestras para análisis físico y químico.
+                    El estudio estableció más de cien asociaciones de suelos que fueron agrupadas según las principales características de los suelos predominantes, resultando diez grandes grupos: Suelos de Sabanas; Suelos Arcillosos no Calcáreos; Suelos de origen Calcáreo; Suelos de origen Igneo, Volcánico y Metamórfico; Suelos Aluviales Recientes; Ciénagas; Playa Costera y Dunas; Suelos Orgánicos; Terrenos Cársicos; y Terrenos Escabrosos de Montaña.</p>
+                </article>
+                <figure class="img__infoText">
+                    <img src="imagenes/impAgua.jpg" alt="Importancia del agua">
+                    <figcaption></figcaption>
+                </figure>
+                <article class="text__infoText">
+                    <!-- Informacion de los temas elegidos-->
+                    <h3 class="text__subtitulo">6 Razones que evidencian la importancia del agua en las plantas</h3>
+                    <p class="text__texto"><b>Germinación de semillas</b><br><br>
+                    Según Growing Anything, germinación es el proceso de una planta recién nacida que emerge de su semilla. Esta necesita agua para activar las enzimas encargadas de dirigir el proceso de germinación. También ayuda a la semilla a que pueda hincharse y suavizarse para permitir que la planta salga.
+                    
+                    <br><br><b>Proceso de fotosíntesis</b><br><br>
+                    Este proceso es por medio del cual las plantas preparan su alimento para sobrevivir y crecer. El agua es el centro de este proceso ya que necesita el hidrógeno presente en esta. Además también necesitan una pequeña cantidad de oxígeno para facilitar la fotosíntesis, el cual también obtienen del agua. Para esto también necesita sol y dióxido de carbono.
+                    
+                    <br><br><b>Translocación</b><br><br>
+                    Se le denomina así al movimiento del agua a través de las diferentes partes de la planta. Por medio de este se transportan los nutrientes y minerales desde el suelo hasta las hojas. Esto se da gracias a la acción capilar, la cual utiliza la tensión del agua para moverse alrededor de toda la estructura.
+                    
+                    <br><br><b>Estructura de la planta</b><br><br>
+                    Las plantas no tienen un esqueleto interno o externo que les ayuden a tener una estructura. Por lo tanto hacen uso de la presión del agua en sus células para crecer y mantenerse rígidas. Esta presión recibe el nombre de “turgencia”.
+                    
+                    Esta fuerza conserva una buena flexibilidad por ser derivada de una fuente líquida. Lo cual le permite que se adapte a su entorno doblándose con el viento y moviéndose en dirección del sol para absorber la mayor cantidad de energía para realizar la fotosíntesis.
+    
+                    <br><br><b>Transpiración</b><br><br>
+                    La transpiración es el proceso mediante el cual el agua es arrastrada desde las raíces hasta el tallo y fuera de la planta. Es útil para permitir la entrada de dióxido de carbono desde el aire, enfriar la planta y ayudar que fluyan los nutrientes por toda la planta.
+    
+                    <br><br><b>Creación de hábitats</b><br><br>
+                    Como mencionamos anteriormente en el papel del agua en los ecosistemas existe una gran cantidad de seres vivos que necesitan un entorno acuático para sobrevivir. Entre estos se encuentran los estanques, ríos, lagos y mares. Donde habitan miles de especies de plantas que necesitan condiciones húmedas para crecer.</p>
+                </article class="img">
+                <figure class="img__infoText">
+                    <img src="imagenes/terraza3foto.jpg" alt="Terrazas y jardines pequeños">
+                    <figcaption></figcaption>
+                </figure>
+                <article class="text__infoText">
+                    <!-- Informacion de los temas elegidos-->
+                    <h3 class="text__subtitulo">Diseñar y aprovechar al máximo jardines y terrazas pequeños</h3>
+                    <p class="text__texto">Planificación inteligente del espacio:
+                    Antes de comenzar a diseñar tu jardín o terraza, es fundamental realizar una planificación inteligente. Toma medidas precisas del área disponible y analiza cómo aprovechar cada centímetro. Por ejemplo, considerando el uso de macetas colgantes o jardines verticales para añadir vegetación y frescura sin ocupar mucho espacio y dejando el suelo más diáfano.</p>
+                </article>
+            </section>
+        </main>
+            <!-- un aside para las redes sociales, aunque aun no estoy muy segura-->
+        <aside class="redes">
+            <h3 class="sub__redes">Siguenos en:</h3>
+            <figure class="img__redes">
+                <!-- Enlace en el logo de la aplicacion, ademas ese instagram es real de la compañia -->
+                <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <img src="imagenes/instgram.png" alt="instagram" width="50">
+                </a>
+                <!--<a href="https://www.youtube.com" target="_blank">
+                    <img src="imagenes/youtube.png" alt="YouTube" width="35">
+                </a>
+                
+                Este apartado lo deje para ver si creo un mini canal en youtube con los videos que tengo.-->
+            </figure>
+        </aside>
+    </div>    
     <footer class="footer">
         <p class="texto__footer">&copy; Todos los derechos reservados - Jardinería Hernández 2024.</p>
     </footer>
