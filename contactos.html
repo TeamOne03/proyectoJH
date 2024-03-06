@@ -54,67 +54,63 @@
             </ul>
         </nav>
     </header> 
-    
-    <main>
-        <section>
-        <form class="contacto">
-            <!-- Esto es por donde las gentes se van a contactar con nosotros.  -->
-            <h1 class="contacto__titulo">Formulario de Contacto</h1>
-            <fieldset>
-                <legend>Contacta con nosotros</legend>
-                <label for="nom">Nombre</label>
-                <input type="text" id="nom" autofocus required>
-                <label for="ape">Apellido</label>
-                <input type="text" id="ape" required><br><br>
-                <label for="email">correo</label>
-                <input type="text" id="email">
-                <label for="tel">Telefono o celular</label>
-                <input type="text" id="tel"><br><br>
-                <br>
-                <label for="comentario">Mensaje</label>
-                <textarea id="comentario" cols="50" rows="20"></textarea>
-                <hr>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-       
-            </fieldset>
-        </form>
-        <article>
-            <figure class="correo__bx">
-                <p>JardineriaHernandez@gmail.com</p>
-                <img src="imagenes/mensaje.png" alt="">
+    <div class="contenedor">
+        <main>
+            <section>
+            <form class="contacto">
+                <!-- Esto es por donde las gentes se van a contactar con nosotros.  -->
+                <h1 class="contacto__titulo">Formulario de Contacto</h1>
+                <fieldset>
+                    <legend>Contacta con nosotros</legend>
+                    <label for="nom">Nombre</label>
+                    <input type="text" id="nom" autofocus required>
+                    <label for="ape">Apellido</label>
+                    <input type="text" id="ape" required><br><br>
+                    <label for="email">correo</label>
+                    <input type="text" id="email">
+                    <label for="tel">Telefono o celular</label>
+                    <input type="text" id="tel"><br><br>
+                    <br>
+                    <label for="comentario">Mensaje</label>
+                    <textarea id="comentario" cols="50" rows="20"></textarea>
+                    <hr>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+           
+                </fieldset>
+            </form>
+            <article>
+                <figure class="correo__bx">
+                    <p>JardineriaHernandez@gmail.com</p>
+                    <img src="imagenes/mensaje.png" alt="">
+                </figure>
+                <figure class="map__bx">
+                    <p>Santigo,Estrellasadhala</p>
+                    <img src="imagenes/mapa.png" alt="">
+                </figure>
+                <figure>
+                    <p>849-861-7224</p>
+                    <img src="imagenes/telefono.png" alt="">
+                </figure>
+            </article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.7264926234425!2d-70.6541866!3d19.4673556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1c50f4d228217%3A0xdcdd718be63e1ae5!2sJardiner%C3%ADa%20Leonardo!5e0!3m2!1ses-419!2sdo!4v1707448513995!5m2!1ses-419!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- este es un lugar que pusimos para simular la ubucacion -->
+            </section>
+        </main>
+        <aside class="redes">
+            <h3 class="sub__redes">Siguenos en:</h3>
+            <figure class="img__redes">
+                <!-- Enlace en el logo de la aplicacion, ademas ese instagram es real de la compañia --> 
+                <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <img src="imagenes/instgram.png" alt="instagram" width="50">
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="imagenes/youtube.png" alt="YouTube" width="35">
+                </a>
+               <!-- Este apartado lo deje para ver si creo un mini canal en youtube con los videos que tengo.-->
             </figure>
-            <figure class="map__bx">
-                <p>Santigo,Estrellasadhala</p>
-                <img src="imagenes/mapa.png" alt="">
-            </figure>
-            <figure>
-                <p>849-861-7224</p>
-                <img src="imagenes/telefono.png" alt="">
-            </figure>
-            
-        </article>
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.7264926234425!2d-70.6541866!3d19.4673556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1c50f4d228217%3A0xdcdd718be63e1ae5!2sJardiner%C3%ADa%20Leonardo!5e0!3m2!1ses-419!2sdo!4v1707448513995!5m2!1ses-419!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <!-- este es un lugar que pusimos para simular la ubucacion -->
-
-        </section>
-    </main>
-
-    <aside class="redes">
-        <h3 class="sub__redes">Siguenos en:</h3>
-        <figure class="img__redes">
-            <!-- Enlace en el logo de la aplicacion, ademas ese instagram es real de la compañia --> 
-            <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                <img src="imagenes/instgram.png" alt="instagram" width="50">
-            </a>
-            <a href="https://www.youtube.com" target="_blank">
-                <img src="imagenes/youtube.png" alt="YouTube" width="35">
-            </a>
-           <!-- Este apartado lo deje para ver si creo un mini canal en youtube con los videos que tengo.-->
-        </figure>
-    </aside>
-
+        </aside>
+    </div>
     <footer class="footer">
         <p class="texto__footer">&copy; Todos los derechos reservados - Jardinería Hernández 2024.</p>
     </footer>

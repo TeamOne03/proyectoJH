@@ -53,77 +53,79 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>DIRECCIÓN DE ENVÍO</h2>
-        <form> <!--  Este es el codigo del formulario de preguntas  -->
-            <label for="nombre">Nombre:</label><br> 
-            <input type="text" id="nombre" name="nombre"><br>
-            <label for="apellidos">Apellidos:</label><br>
-            <input type="text" id="apellidos" name="apellidos"><br>
-            <label for="direccion">Dirección:</label><br>
-            <input type="text" id="direccion" name="direccion"><br>
-            <label for="codigo_postal">Código Postal:</label><br>
-            <input type="text" id="codigo_postal" name="codigo_postal"><br>
-            <label for="localidad">Localidad:</label><br>
-            <input type="text" id="localidad" name="localidad"><br>
-            <label for="provincia">Provincia:</label><br>
-            <input type="text" id="provincia" name="provincia"><br>
-            <label for="telefono">Teléfono de casa:</label><br>
-            <input type="number" id="telefono" name="telefono"><br>
-            
-        </form>
-        <h2>Resumen del pedido</h2>
-        <figure>
-            <img src="imagenes/planta.jpg" height="200" title="planta" alt="planta">
-            <figcaption>planta</figcaption>
-        </figure>
-        <p>Precio: RD$500</p>
-        <form>
-            <label for="cantidad">Cantidad:</label><br>
-            <input type="number" id="cantidad" min="1" max="10" name="cantidad"><br>
-        </form>
-        <h2>MÉTODO DE PAGO</h2>
-         <form> <!-- checkbox de la tajeta de credito -->
-            <label for="Americanexpress">
-                <img src="imagenes/Americanexpress.png" height="50" alt="tarjeta de credito">
-            </label>
-            <input type="checkbox" id="Americanexpress">
-            <label for="mastercard">
-                <img src="imagenes/MasterCard_Logo.svg.png"
-                height="50" alt="tarjeta">
-            </label>
-            <input type="checkbox" id="mastercard">
-            <label for="visa">
-                <img src="imagenes/visa.png" height="50" alt="visa">
-            </label>
-            <input type="checkbox" id="visa">
-        </form>
-        <form> <!-- otro formulario -->
-            <label for="card-number">Número de tarjeta:</label><br>
-            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" maxlength="19"><br>
-            <label for="card-holder">Nombre del titular:</label><br>
-            <input type="text" id="card-holder" name="card-holder" placeholder="Nombre y apellidos" required><br>
-            <label for="expiration-date">Fecha de caducidad:</label><br>
-            <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/AA" maxlength="5" required><br>
-            <label for="cvv">CVV:</label><br>
-            <input type="text" id="cvv" name="cvv" placeholder="CVV" maxlength="3" required><br>
-            <button type="submit">Realizar pago</button>
-        </form>
-    </main>
-    <aside class="redes">
-        <h3 class="sub__redes">Siguenos en:</h3>
-        <figure class="img__redes">
-            <!-- Enlace en el logo de la aplicacion, ademas ese instagram es real de la compañia -->
-            <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                <img src="imagenes/instgram.png" alt="instagram" width="50">
-            </a>
-            <!--<a href="https://www.youtube.com" target="_blank">
-                <img src="imagenes/youtube.png" alt="YouTube" width="35">
-            </a>
-            
-            Este apartado lo deje para ver si creo un mini canal en youtube con los videos que tengo.-->
-        </figure>
-    </aside>
+    <div class="contenedor">
+        <main>
+            <h2>DIRECCIÓN DE ENVÍO</h2>
+            <form> <!--  Este es el codigo del formulario de preguntas  -->
+                <label for="nombre">Nombre:</label><br> 
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="apellidos">Apellidos:</label><br>
+                <input type="text" id="apellidos" name="apellidos"><br>
+                <label for="direccion">Dirección:</label><br>
+                <input type="text" id="direccion" name="direccion"><br>
+                <label for="codigo_postal">Código Postal:</label><br>
+                <input type="text" id="codigo_postal" name="codigo_postal"><br>
+                <label for="localidad">Localidad:</label><br>
+                <input type="text" id="localidad" name="localidad"><br>
+                <label for="provincia">Provincia:</label><br>
+                <input type="text" id="provincia" name="provincia"><br>
+                <label for="telefono">Teléfono de casa:</label><br>
+                <input type="number" id="telefono" name="telefono"><br>
+                
+            </form>
+            <h2>Resumen del pedido</h2>
+            <figure>
+                <img src="imagenes/planta.jpg" height="200" title="planta" alt="planta">
+                <figcaption>planta</figcaption>
+            </figure>
+            <p>Precio: RD$500</p>
+            <form>
+                <label for="cantidad">Cantidad:</label><br>
+                <input type="number" id="cantidad" min="1" max="10" name="cantidad"><br>
+            </form>
+            <h2>MÉTODO DE PAGO</h2>
+             <form> <!-- checkbox de la tajeta de credito -->
+                <label for="Americanexpress">
+                    <img src="imagenes/Americanexpress.png" height="50" alt="tarjeta de credito">
+                </label>
+                <input type="checkbox" id="Americanexpress">
+                <label for="mastercard">
+                    <img src="imagenes/MasterCard_Logo.svg.png"
+                    height="50" alt="tarjeta">
+                </label>
+                <input type="checkbox" id="mastercard">
+                <label for="visa">
+                    <img src="imagenes/visa.png" height="50" alt="visa">
+                </label>
+                <input type="checkbox" id="visa">
+            </form>
+            <form> <!-- otro formulario -->
+                <label for="card-number">Número de tarjeta:</label><br>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" maxlength="19"><br>
+                <label for="card-holder">Nombre del titular:</label><br>
+                <input type="text" id="card-holder" name="card-holder" placeholder="Nombre y apellidos" required><br>
+                <label for="expiration-date">Fecha de caducidad:</label><br>
+                <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/AA" maxlength="5" required><br>
+                <label for="cvv">CVV:</label><br>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV" maxlength="3" required><br>
+                <button type="submit">Realizar pago</button>
+            </form>
+        </main>
+        <aside class="redes">
+            <h3 class="sub__redes">Siguenos en:</h3>
+            <figure class="img__redes">
+                <!-- Enlace en el logo de la aplicacion, ademas ese instagram es real de la compañia -->
+                <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <img src="imagenes/instgram.png" alt="instagram" width="50">
+                </a>
+                <!--<a href="https://www.youtube.com" target="_blank">
+                    <img src="imagenes/youtube.png" alt="YouTube" width="35">
+                </a>
+                
+                Este apartado lo deje para ver si creo un mini canal en youtube con los videos que tengo.-->
+            </figure>
+        </aside>
+    </div>
     <footer class="footer">
         <p class="texto__footer">&copy; Todos los derechos reservados - Jardinería Hernández 2024.</p>
     </footer>
