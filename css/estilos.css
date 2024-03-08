@@ -1,23 +1,38 @@
 @font-face {
-    font-family: mifuenteMia;
-    src: url(../fuentes/CormorantGaramond-BoldItalic.ttf);
+    font-family: fuentes;
+    src: url(/fuentes/CormorantGaramond-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+:root {
+    --verdePastel: #d5e4cf;
+    --verdeGrisaseo: #9ba79c;
+    --verdeGrisOscuro: #afc2ae;
+    --verdegris: #d5e4cf;
+    --crema: #fcf7ec;
+    --verdeMilitar: #273526;
+    --grisAzulado: #45627e;
+    --verdeMilitar: #6d8777;
+    --verdeClaro : #c0cfb2;
+    --verdeGris2: #e4e6d9;
+    --verdeClaro1: #b7f7c7;
+    --verdeclaro2: #9fdeaf;
+    --verdeClaro3: #87c598;
+    --verdeOscuro1: #6fac80;
+    --verdeOscuro2: #579368;
+    /* Colores que estaran en la lista de tal vez */
+    --quizas1: #3e7e55;
+    --quizas2: #7abd87;
+    --quizas3: #cadec8;
+    --quizas4: #eaeee5;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Cormorant Garamond;
-}
-
-body {
+html {
     background-color: #E1EFD8;
+    font-family: fuentes;
+    font-weight: lighter;
 }
 
-.logo__Empresa {
-    margin-left: 40px;
-    margin-top: 20px;
-}
 
 nav {
     margin: auto;
@@ -49,8 +64,9 @@ nav {
     position: absolute;
     display: none;
     list-style: none;
-    width: 200px;
+    width: 400px;
     background-color: #e1efd8d5;
+
 }
 
 .menu__horizontal li:hover .menu__vertical {
@@ -68,17 +84,158 @@ nav {
     text-decoration: none;
 }
 
-#contenedor {
-    background: #fff;
-    width: 80%;
+/* Servicios */
+/* Selecciona el contenedor de la barra de búsqueda. */
+.search-container {
+  display: flex; /*display: flex: Establece el contenedor como un contenedor flexible para que los elementos hijos puedan alinearse horizontalmente.*/
+  max-width: 907px; /*max-width: 907px: Limita el ancho máximo del contenedor de búsqueda a 907 píxeles.*/
+  margin: 0 auto;/*margin: 0 auto: Centra el contenedor horizontalmente dentro de su contenedor padre.*/
 }
 
-footer {
-    margin: auto;
-    padding: 20px;
+input[type="text"] {
+  flex: 1; /*Hace que el campo de entrada de texto se expanda para llenar el espacio disponible restante en el contenedor.*/
+  padding: 10px;
+  border: 1px solid var(--verdeGrisaseo);
+  border-radius: 4px 0 0 4px;
 }
 
-.texto__footer {
+button[type="submit"] {
+  padding: 10px 20px; /*padding: Agrega un espacio de relleno alrededor del texto dentro del botón.*/
+  background-color: var(--verdeOscuro2); /*background-color: Establece el color de fondo del botón.*/
+  color: #fff; /*color: Establece el color del texto dentro del botón.*/
+  border: none; /*border: Quita el borde del botón.*/
+  border-radius: 0 4px 4px 0; /*border-radius: Agrega esquinas redondeadas al botón.*/
+  cursor: pointer; /*cursor: Cambia el cursor al pasar sobre el botón.*/
+}
+
+button[type="submit"]:hover {
+  background-color: var(--verdeMilitar); /*background-color: Cambia el color de fondo del botón cuando se pasa el cursor sobre él.*/
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+#area__servicios .titulo {
     text-align: center;
-    color: black;
+    font-family: light;
+    font-size: 48px;
+}
+
+
+#servicios {  
+    display: grid; /*display: grid;, Para organizar los elementos hijos.*/
+    grid-template-columns: 1fr 1fr;/*grid-template-columns: 1fr 1fr; divide el contenedor en dos columnas de igual ancho.*/
+    grid-column-gap: 20px;/*grid-column-gap: 20px; establece un espacio de separación de 20 px entre las columnas.*/
+    list-style: none;/*list-style: none; elimina los puntos de la lista, en caso de que el contenedor de servicios sea una lista. */
+}
+
+#servicios a {
+    color: #000;/*color: #000; establece el color de texto de los enlaces en negro.*/
+    text-decoration: none;/*text-decoration: none; elimina la subrayado predeterminado de los enlaces. */
+    margin: 0 20px;/*margin: 0 20px; agrega un margen de 20 píxeles en los lados izquierdo y derecho de cada enlace.*/    
+    border-radius: 10px;/*border-radius: 10px; agrega esquinas redondeadas a los enlaces con un radio de 10 px.*/
+}
+
+.menu__servicios {
+    margin-bottom: 10px;/*margin-bottom: 10px; agrega un margen en la parte inferior del contenedor. */
+    background-color: var(--quizas3);/*background-color: var(--quizas3); establece un color de fondo gris claro para el contenedor. */
+    border-radius: 10px;/*border-radius: 10px; agrega esquinas redondeadas al contenedor.*/
+    max-height: 57;/*max-height: 57; establece la altura máxima del contenedor en 57 px (esto puede ser un error, debería ser max-height: 57px;).*/
+    max-width: 450px;/*max-width: 450px; establece el ancho máximo del contenedor en 450 px. */
+    text-align: justify;/*text-align: justify; justifica el texto dentro del contenedor.*/
+    font-size: 20px;/*font-size: 20px; establece el tamaño de fuente en 20 px.*/
+    padding: 10px;/*padding: 10px; agrega un relleno de 10 px alrededor del contenido.*/
+}
+
+/* Matenimiento */
+
+#area-mantenimiento {
+    background-color: var(--quizas3);
+    width: 1000px;
+    margin: 5px;
+    padding: 0 20px;
+    border-radius: 10px;
+    margin-left: 60px;
+}
+
+.parrafo, p {
+    text-align: justify;
+    font-size: 18px;
+    font-style: light;
+}
+
+p {
+    text-align: justify;
+    font-weight: 300px;
+
+}
+
+.sub__titulo1 {
+    text-align: center;
+    font-size: 32px;
+    font-style: medium;
+}
+
+.sub-descrip {
+      text-align: center;
+    font-size: 20px;
+    font-style: medium;
+}
+
+.mantenimiento__img {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mantenimiento__img img {
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+}
+
+.cotizar {
+    display: flex;
+    justify-content: center;
+}
+
+.cotizar button {
+    background-color: var(--quizas2);
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.cotizar button:hover {
+    background-color: var(--quizas1);
+    width: 200px;
+    cursor: pointer;
+}
+
+/* Diseño de jardines */
+
+.sub__diseño {
+    text-align: center;
+    font-size: 32px;
+    font-style: medium;
+}
+
+.img__diseño {
+    display: flex;
+    width: 900px;
+    z-index: 1;
+}
+
+.img__diseño img {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+}
+
+#area__servicios  .parrafo2 {
+    text-align: justify;
+    width: 400px;
+   font-size: 24px;
 }
