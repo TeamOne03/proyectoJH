@@ -11,7 +11,7 @@
     <!-- Link del css falta -->
 </head>
 <body>
-    <div class="contenedor">
+    <div id="contenedor">
     <header>
         <a href="index.html">
             <figure class="logo__Empresa">
@@ -21,6 +21,7 @@
         <!--<h1>Jardinería Hernández</h1>-->
         <nav class="menu">
             <!-- Menu-->
+            <details>
             <ul>
                 <li class="menu__Empresa"><a href="index.html">Inicio</a></li>
                 <li class="menu__Empresa"><a href="servicios.html">Servicios</a></li>
@@ -31,6 +32,8 @@
                 <li class="menu__Empresa"><a href="#">Nosotros</a></li>
                 <!--Aqui aun no pongo el nombre de las demas paginas html, cuando ya tenga nombres pues lo coloco en el href-->
             </ul>
+        </details>
+
         </nav>
     <form class="busqueda">
         <!-- Esto es para poder buscar en el area de Servicio. -->
@@ -42,32 +45,31 @@
     </form>
  </header>
 
- <main> 
-    <!-- Aki esta el area de mantenimiento -->
-    <section class="servicio">
-        <h1 class="titulo">Servicios</h1>    
-            <article class="fitosanitario">
-                <h2 class="sub__tratamiento"> Tratamiento Fitosanitario</h2>
+ <main>
+    <!-- Aki esta el area de servicio -->
+    <section id="servicio">
+        <div class="contenedor">      
+            <article id="area__servicios">
+                <h1 class="titulo">Servicios</h1>
+                <p><strong>¿Qué necesitas?</strong></p>
+                <ul id="servicios">
+                    <li class="menu__servicios"><a href="mantenimiento.html"> Mantenimiento</a></li>
+                    <li class="menu__servicios"><a href="diseño.html"> Diseño de Jardines</a></li>
+                    <li class="menu__servicios"><a href="podaDePlanta.html">Poda de plantas</a> </li>
+                    <li class="menu__servicios"><a href="abonado.html"> Abonado</a></li>
+                    <li class="menu__servicios"><a href="sistemaDeDeteccionDePlaga.html"> Sistemas de detección de plagas</a></li>
+                    <li class="menu__servicios"><a href="tratamientoFitosanitario.html"> Tratamiento fitosanitario</a></li>
+                    <li class="menu__servicios"><a href="eliminaciónDeMalahierba.html"> Eliminación de malas hierbas</a></li>
+                    <li class="menu__servicios"><a href="revisionSistemaDeRiesgo.html">Revisión sistemas de riego</a> </li>
+                    <li class="menu__servicios"><a href="Supervisiónreparacióneintalacióndecéspedartificial.html"> Supervisión, reparación e intalación de césped artificial</a></li>
+                    <li class="menu__servicios"><a href="controlyProgramaciónderiego.html"> Control y programación de riego</a></li>
+                </ul>
 
-                    <h4>¿Por qué hacer un tratamiento fitosanitario en el jardín?</h4>
-                    <figure>
-                       <img src="imagenes/fitosanitario.jpg" alt="">
-                    </figure>
-
-                    <p>El tratamiento fitosanitario en el jardín viene de la prevención y curación de las enfermedades de las plantas o relacionado con ello. En todo jardín es necesario un tratamiento fitosanitario correcto.</p>
-
-                    <p> Objetivos del tratamiento fitosanitario
-                    Los tratamientos fitosanitarios se centran principalmente en la erradicación completa, la prevención y el control de plagas que sean perjudiciales para la salud y el crecimiento saludable de las plantas y sembradíos en huertos y jardines.</p>
-
-                    <p> Si queremos resumir, los objetivos de combatir las plagas invasoras y enfermedades podemos decir que son:</p>
-
-                    <img src="imagenes/bxs-right-arrow.svg" alt=""><figcaption><p> <strong> Erradicar enfermedades</strong> en árboles y plantas que puedan afectar su resistencia e integridad.</p></figcaption>
-
-                    <img src="imagenes/bxs-right-arrow.svg" alt=""><figcaption><p> <strong> Prevenir y minimizar</strong> los riesgos en las enfermedades de sembradíos.</p></figcaption>
-
-                    <img src="imagenes/bxs-right-arrow.svg" alt=""><figcaption><p> <strong> Evitar la propagación</strong> o ingreso de plagas en nuestros jardines y huertos.</p></figcaption>
+                 <figure>
+                    <img src="imagenes/mantenimiento-integral-de-exteriores.jpg" alt="">
+                </figure>
             </article>
-        </div>
+        </div> 
     </section>
  </main>
  <aside class="redes">
@@ -90,3 +92,4 @@
  
     </div>
 </body>
+</html>
