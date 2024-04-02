@@ -97,7 +97,7 @@ main {
 }
 
 .boton__comprar, .boton__cotizar {
-    background-color: #4CAF50;
+    background-color: #579368;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -113,8 +113,8 @@ main {
     font-size: large;
 }
 
-.boton__cotizar {
-    background-color: #00b300;
+.boton__cotizar:hover {
+    background-color: #3e8853;
 }
 
 #cuadro {
@@ -128,6 +128,165 @@ main {
 }
 
 #descripcion h2 {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #2f7e46;
+}
+
+#descripcion p {
+    margin-bottom: 57px;
+    font-size: 18px;
+    color: #292929;
+    line-height: 24px
+}
+
+.boton__comprar {
+    background-color: #273526;
+    color: #fff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: large;
+}
+
+.boton__comprar:hover {
+    background-color: #182017;
+}
+
+#articulo img {
+    height: 500px;
+    margin-left: 20px;
+}
+
+@media (max-width: 667px) {
+    body {
+    background-color: #E1EFD8;
+}
+
+.logo__Empresa {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+nav {
+    margin: auto;
+    background: #e1efd8;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.menu__horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu__horizontal > li:hover {
+    background-color: #fff;
+}
+
+.menu__vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: #e1efd8d5;
+}
+
+.menu__horizontal li:hover .menu__vertical {
+    display: block;
+}
+
+.menu__vertical li:hover {
+    background-color: #cedfc3;
+}
+
+.menu__vertical li a {
+    display: block;
+    color: black;
+    padding: 10px 10px 10px 15px;
+    text-decoration: none;
+}
+
+#contenedor {
+    background: #fff;
+    width: 80%;
+}
+
+footer {
+    margin: auto;
+    padding: 20px;
+}
+
+.texto__footer {
+    text-align: center;
+    color: black;
+}
+
+main {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.comprar, .cotizar {
+    display: inline-block;
+    margin: 20px 10px 0 0;
+}
+
+.boton__comprar, .boton__cotizar {
+    background-color: #579368;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: large;
+}
+
+.boton__cotizar:hover {
+    background-color: #3e8853;
+}
+
+#cuadro {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: flex-start;
+}
+
+#descripcion {
+    justify-content: space-between;
+}
+
+#descripcion h2 {
+    text-transform: uppercase;
     margin-bottom: 50px;
 }
 
@@ -136,18 +295,28 @@ main {
 }
 
 .boton__comprar {
-    background-color: #333;
+    background-color: #273526;
     color: #fff;
     border: none;
+    color: white;
     padding: 10px 20px;
-    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: large;
 }
 
 .boton__comprar:hover {
-    background-color: #444;
+    background-color: #182017;
 }
 
 #articulo img {
     height: 500px;
+}
 }
