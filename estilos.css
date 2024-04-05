@@ -1,0 +1,1140 @@
+@font-face {
+    font-family: fuentes;
+    src: url(/fuentes/CormorantGaramond-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+:root {
+    --verdePastel: #d5e4cf;
+    --verdeGrisaseo: #9ba79c;
+    --verdeGrisOscuro: #afc2ae;
+    --verdegris: #d5e4cf;
+    --crema: #fcf7ec;
+    --verdeMilitar: #273526;
+    --grisAzulado: #45627e;
+    --verdeMilitar: #6d8777;
+    --verdeClaro : #c0cfb2;
+    --verdeGris2: #e4e6d9;
+    --verdeClaro1: #b7f7c7;
+    --verdeclaro2: #9fdeaf;
+    --verdeClaro3: #87c598;
+    --verdeOscuro1: #6fac80;
+    --verdeOscuro2: #579368;
+    /* Colores que estaran en la lista de tal vez */
+    --quizas1: #3e7e55;
+    --quizas2: #7abd87;
+    --quizas3: #cadec8;
+    --quizas4: #eaeee5;
+}
+
+html {
+    background-color: #E1EFD8;
+    font-family: fuentes;
+    font-weight: lighter;
+}
+
+
+nav {
+    margin: auto;
+    background: #e1efd8;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.menu__horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+
+.menu__horizontal > li:hover {
+    background-color: #fff;
+}
+
+.menu__vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 400px;
+    background-color: #e1efd8d5;
+    z-index: 1;
+}
+
+.menu__horizontal li:hover .menu__vertical {
+    display: block;
+}
+
+.menu__vertical li:hover {
+    background-color: #cedfc3;
+}
+
+.menu__vertical li a {
+    display: block;
+    color: black;
+    padding: 10px 10px 10px 15px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+/* Servicios */
+
+/* Selecciona el contenedor de la barra de búsqueda. */
+.search-container {
+  display: flex; /*display: flex: Establece el contenedor como un contenedor flexible para que los elementos hijos puedan alinearse horizontalmente.*/
+  justify-content: center;
+  max-width: 907px; /*max-width: 907px: Limita el ancho máximo del contenedor de búsqueda a 907 píxeles.*/
+  margin: 0 auto;/*margin: 0 auto: Centra el contenedor horizontalmente dentro de su contenedor padre.*/
+}
+
+.barra {
+    background: #fff;
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    height: 30px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.barra input {
+    flex: 1;
+    padding: 15px 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 20px;
+}
+
+.barra button img {
+    width: 25px;
+}
+
+.barra button {
+    padding: 10px 12px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+#area__servicios .titulo {
+    text-align: center;
+    font-family: light;
+    font-size: 48px;
+}
+
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    margin-left: 0px;
+    /* height: 100vh; */
+}
+
+.servicios__img {
+    position: relative;
+    height: 150px;
+    margin: 10px;
+    overflow: hidden;
+    width: 450px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.servicios__img img {
+    height: 100%;
+    transition: all 500ms ease-out;
+    width: 100%;
+}
+
+.servicios__img .texto__ser {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0,.55);
+   transition: all 500ms ease-out;
+   opacity: 0;
+   visibility: hidden;
+   text-align: center;
+   color: #fff;
+}
+
+.texto__ser h3 {
+    font-size: 24px;
+}
+
+.servicios__img:hover .texto__ser {
+    opacity: 1;
+    visibility: visible;
+}
+
+.servicios__img:hover .texto__ser h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.boton__cotizar {
+    display: flex;
+    align-self: flex-end;
+    list-style-type: none;
+}
+
+/* Matenimiento */
+
+#area-mantenimiento {
+    background-color: var(--quizas3);
+    width: 67%;
+    height: 185px;
+    border-radius: 10px;
+    margin-left: 250px;
+}
+
+#area-mantenimiento p {
+    text-align: justify;
+    font-size: 18px;
+    margin: 10px 20px;
+    padding: 5px;
+}
+
+
+.sub__titulo1 {
+    text-align: center;
+    font-size: 32px;
+    font-style: medium;
+}
+
+.sub-descrip {
+      text-align: justify;
+    font-size: 20px;
+    font-style: medium;
+    margin: 10px 20px;
+}
+
+.area-mantenimiento{
+    margin-top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 18px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: var(--quizas1);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 18px #000;
+}
+
+.card .back .link {
+    background-color: var(--quizas2);
+    border-top: solid 1px #f3f3f3;
+    border-radius: 25px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    text-decoration: none;
+    color: #f3f3f3;
+    font-size: 20px;
+}
+
+.back .link:hover  {
+    background-color: #1C4807;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.formulario__cotizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formulario__cotizar label {
+    display: flex;
+    align-self: flex-start;
+}
+
+.formulario__cotizar #fecha {
+    display: flex;
+    align-self: flex-start;
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+}
+
+.formulario__cotizar input {
+   display: flex;
+   align-self: flex-start;
+   height: 33px;
+   width: 185px;
+   border-radius: 25px;
+   border: 1px solid #bdbfbc;
+}
+
+.formulario__cotizar textarea {
+    display: flex;
+   align-self: flex-start;
+   height: 77px;
+   width: 300px;
+   border-radius: 25px;
+   border: 1px solid #bdbfbc;
+}
+
+.formulario__cotizar input[type="submit"] {
+    background-color: var(--verdeOscuro1);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    width: 100px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.formulario__cotizar input[type="submit"]:hover {
+    background-color: var(--verdeOscuro2);
+}
+
+.formulario__cotizar p {
+    color: #000;
+    font-size: 35px;
+    font-weight: 700;
+    margin-right: 225px;
+}
+/* Diseño de jardines */
+
+.sub__diseño {
+    text-align: center;
+    font-size: 32px;
+    font-style: medium;
+}
+
+.para {
+     width: 50%;
+     border-radius: 10px;
+     margin-left: 100px;
+}
+
+.para p {    
+    text-align: justify;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 2px;
+}
+
+.img__diseño img, .img2__diseño img {
+    border-radius: 10px;
+    width: 400px;
+    height: 350px;
+    margin: 20px;
+}
+
+
+.img__diseño img {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    margin-top: -10px;
+    margin-right: 100px;
+     object-fit: cover;
+     box-shadow: 3px 3px 3px 0 var(--verdeGrisaseo);
+}
+
+.img__jardines .jardin__formal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__jardines .jardin__formal img {
+   display: flex;
+   align-self: flex-start;
+   margin-left: 100px;
+   margin: 0 50px;
+    object-fit: cover;
+    box-shadow: 3px 3px 3px 0 var(--verdeGrisaseo);
+}
+
+.img__jardines .jardin__formal h3 {
+    font-size: 20px;
+}
+
+.img__jardines .img2__diseño {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .img__jardines h2 {
+    margin-left: 250px;
+    color: var(--grisAzulado);
+    font-size: 30px;
+} */
+
+.img__jardines p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Poda de plantas */
+
+
+.img__poda {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.img__poda h3 {
+    text-align: center;
+    font-size: 32px;
+    font-style: medium;
+}
+
+.img__poda h4 {
+    margin-left: 250px;
+    color: var(--grisAzulado);
+    font-size: 30px;
+}
+
+.parra {
+    background-color: var(--quizas3);
+    border-radius: 10px;
+    width: 60%;
+    margin: 10px;
+    margin-left: 200px;
+}
+
+.parra p {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.poda__img {
+     display: flex;
+     flex-direction: column;
+     margin-left: 180px;
+}
+
+.poda__img img {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    height: 350px;
+    border-radius: 10px;
+     object-fit: cover;
+     box-shadow: 3px 3px 3px 0 var(--verdeGrisaseo);
+}
+
+.poda__img .img__ {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 100px;
+}
+
+.poda__img .img_ {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 100px;
+    margin: 0 20px;
+}
+
+.poda__img .img_ p {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    width: 500px;
+    margin-left: 50px;
+}
+
+.poda__img .img__ p {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    width: 500px;
+    margin-right: 50px;
+}
+
+/*  Abonado */
+
+.titulo_ h3 {
+    text-align: center;
+    font-size: 32px;
+    font-style: medium;
+}
+
+.abonado__img {
+    display: flex;
+     flex-direction: column;
+     margin-left: 180px;
+}
+
+.abonado__img img {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    height: 350px;
+    border-radius: 10px;
+     object-fit: cover;
+     box-shadow: 3px 3px 3px 0 var(--verdeGrisaseo);
+}
+
+.abonado__img .abo__img {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 100px;
+    margin: 0 20px;
+}
+
+.abonado__img .jardin__img {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 100px;
+}
+
+.abonado__img .abo__img p {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    width: 500px;
+    margin-left: 50px;
+}
+
+.abonado__img .jardin__img p {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    width: 500px;
+    margin-right: 50px;
+}
+
+/* Sistema de deteccion de plagas */
+
+.sub__plaga h2 {
+    text-align: center;
+    font-size: 32px;
+    font-style: medium;
+}
+
+.sub__plaga h3 {
+     text-align: center;
+     color: var(--grisAzulado);
+     font-size: 30px;
+}
+
+.img__plagas img {
+     width: 70%;
+     height: 350px;
+     border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 3px 3px 3px 0 var(--verdeGrisaseo);
+}
+
+.img__plagas .plaga__img {
+    display: flex;
+    align-self: center;
+}
+
+.img__plagas .img-plaga  img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Tratamiento fitosanitario */
+.sub__tratamiento h2 {
+     text-align: center;
+     font-size: 32px;
+     font-style: medium;
+}
+
+.sub__tratamiento h4 {
+     text-align: center;
+     color: var(--grisAzulado);
+     font-size: 30px;
+}
+
+.img__fitosanitario .fitosanitario__img {
+    display: flex;
+    justify-content: center;
+}
+
+.img__fitosanitario .fitosanitario__img img {
+      width: 40%;
+      height: 350px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 3px 3px 3px 0 var(--verdeGrisaseo);
+}
+
+.img__fitosanitario .fitosanitario__img p {
+     display: flex;
+     align-items: center;
+     text-align: justify;
+     width: 500px;
+     margin-left: 50px;
+}
+
+.img__fitosanitario .resumen p {
+    color: var(--verdeGris2);
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.img__fitosanitario .flecha__img {
+     /* background-color: var(--verdeOscuro2); */
+     border-radius: 10px;
+     width: 70%;
+
+}
+
+.img__fitosanitario .img__flecha{   
+    display: flex; 
+   text-align: center;
+   margin-left: 40px;
+}
+
+.img__fitosanitario .img__flecha p {
+    color: #000;
+    margin: 0 5px;
+    padding: 30px 0;
+    font-size: 15px;
+}
+
+.img__fitosanitario .img__flecha img {
+    padding: 30px 0;
+}
+
+
+/* Eliminación de malas hierbas */
+
+.eliminacion h2 {
+    text-align: center;
+    font-size: 32px;
+    font-style: medium;
+}
+
+.eliminacion__img {
+    display: flex;
+    flex-direction: column;
+    margin-left: 180px;
+}
+
+.eliminacion__img .img__eliminacion {
+    display: flex;
+    justify-content: center;
+}
+
+.eliminacion__img .img__eliminacion p {
+     display: flex;
+     align-items: center;
+     text-align: justify;
+     font-size: 18px;
+     width: 500px;
+     margin-left: 50px;
+}
+
+.eliminacion__img  img {
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        height: 350px;
+        border-radius: 10px;
+        object-fit: cover;
+        box-shadow: 3px 3px 3px 0 var(--verdeGrisaseo);
+}
+
+.eliminacion__img .img__eliminacion {
+      display: flex;
+      align-self: flex-start;
+      margin-left: 100px;
+      margin: 0 20px;
+}
+
+.eliminacion__img .elimina__img {
+     display: flex;
+     align-self: flex-end;
+     margin-right: 100px;
+}
+
+.eliminacion__img .elimina__img p {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    width: 500px;
+    margin-right: 50px;
+}
+
+/* Sistema de riego */
+
+.sistema__riego h2{
+    text-align: center;
+    font-size: 32px;
+    font-style: bold;
+    font-weight: lighter;
+}
+
+.sistema__img {
+     display: flex;
+     flex-direction: column;
+     margin-left: 180px;
+}
+
+.sistema__img .img__sistema {
+    display: flex;
+    justify-content: center;
+}
+
+.sistema__img .img__sistema p {
+     display: flex;
+     align-items: center;
+     text-align: justify;
+     width: 500px;
+     margin-left: 50px;
+}
+
+.sistema__img img {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    height: 350px;
+    border-radius: 10px;
+     object-fit: cover;
+     box-shadow: 3px 3px 3px 0 var(--verdeGrisaseo);
+}
+
+.sistema__img .img__sistema {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 100px;
+    margin: 0 20px;
+}
+
+.sistema__img .riego__img {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 100px;
+}
+
+.sistema__img .texto__ p strong {
+   font-family: light;
+   
+}
+
+
+/* Supervisión, reparación e intalación de césped artificial. */
+
+.cesped--artificial h2 {
+    text-align: center;
+    font-size: 32px;
+    font-style: bold;
+    font-weight: lighter;
+}
+
+.img-cesped {
+      display: flex;
+      flex-direction: column;
+      margin-left: 180px;
+}
+
+.img-cesped img {
+      display: flex;
+      justify-content: space-between;
+      width: 600px;
+      height: 350px;
+      border-radius: 10px;
+       object-fit: cover;
+       box-shadow: 3px 3px 3px 0 var(--verdeGrisaseo);
+}
+
+.img-cesped .img__artificial {
+     display: flex;
+     align-self: flex-start;
+     margin-left: 100px;
+     margin: 0 20px;
+}
+
+.img-cesped .artificial__img {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 100px;
+}
+
+.artifi__texto {
+    /* background-color: #fff; */
+    width: 70%;
+}
+
+.artifi__texto p {
+    margin: 0 ;
+}
+
+
+/* Control y programación de riego */
+
+.control--riego h2 {
+       text-align: center;
+       font-size: 32px;
+       font-style: bold;
+       font-weight: lighter;
+}
+
+.riego__control {
+     display: flex;
+     flex-direction: column;
+     margin-left: 180px;
+}
+
+.riego__control img {
+     display: flex;
+     justify-content: space-between;
+     width: 450px;
+     height: 350px;
+     border-radius: 10px;
+     object-fit: cover;
+     box-shadow: 3px 3px 3px 0 var(--verdeGrisaseo);
+}
+
+.riego__control .img__riego {
+     display: flex;
+     align-self: flex-start;
+     margin-left: 100px;
+     margin: 0 20px;
+     /* background: var(--quizas4); */
+     padding: 25px;
+     border-radius: 25px;
+}
+
+.riego__control .riego__img {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 100px;
+    /* background: var(--quizas4); */
+    padding: 25px;
+    border-radius: 25px;
+}
+
+
+.riego__control .img__riego p{
+     display: flex;
+     align-items: center;
+     text-align: justify;
+     width: 500px;
+     margin-left: 50px;
+}
+
+.riego__control .riego__img p {
+     display: flex;
+     align-items: center;
+     text-align: justify;
+     width: 500px;
+     margin-right: 50px;
+}
+
+.riego__control .img__riego {
+     display: flex;
+     justify-content: center;
+}
+
+/* USUARIO */
+
+.form__usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__usuario form {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.form__usuario h2 {
+     text-align: center;
+     font-size: 32px;
+     color: #000;
+     margin-bottom: 25px;
+}
+
+label, p {
+    font-size: 18px;
+    color: #575757;
+    margin-bottom: 10px;
+}
+
+.form__usuario input {
+    border: 0;
+    padding: 17px 11px;
+    margin-bottom: 25px;
+    border-radius: 25px; 
+    outline: none;
+    font-size: 24px;
+}
+
+.form__usuario #correo, #pass {
+    width: 375px;
+    height: 20px;
+    font-size: 20px;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    width: 375px;
+    height: 35px;
+    border-radius: 25px;
+}
+
+.boton input{
+    background-color: var(--quizas1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 375px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+.boton:hover input {
+    background-color: var(--quizas2);
+}
+
+.usuario p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: -15px;
+    font-size: 16px;
+    color: #000;
+}
+
+.otra__manera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.otra__manera a {
+    text-decoration: none;
+}
+
+.otra__manera h4 {
+    font-size: 20px;
+    color: #000;
+}
+
+.otra__manera p {
+    font-size: 16px;
+    color: #000;
+}
+
+.otra__manera p strong {
+    color: #1C4807;
+    cursor: pointer;
+}
+
+.otra__manera img {
+    height: 30px auto;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.form__registro {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.form__registro form {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.form__registro .nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__registro .nome input {
+    width: 170px;
+    margin: 0 5px 20px 0;
+    padding: 17px 11px;
+    height: 20px;
+}
+
+.form__registro input {
+    border: 0;
+    width: 375px;
+    height: 20px;
+    margin: 0 0px 20px 0;
+    padding: 17px 11px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 18px;
+}
+
+.registrar {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.registrar input {
+    width: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.registrar strong {
+    color: #1C4807;
+    cursor: pointer;
+}
+
+.regis {
+    display: flex;
+    justify-content: center;
+    width: 375px;
+    height: 35px;
+    border-radius: 25px;
+}
+
+.regis input[type="submit"] {
+    background-color: var(--quizas1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 375px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+.regis:hover input {
+    background-color: var(--verdeOscuro2);
+}
+
+
+/* ------Contatos------- */
+
+.form__contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@media(max-width:991) {
+    
+    form {
+        width: 100%;
+    }
+}
