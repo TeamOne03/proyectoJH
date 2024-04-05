@@ -59,26 +59,35 @@
 <!-- Ya esto aki es para registrarse  -->
  <main>
   <section>
-    <article>
+    <article class="form__registro">
     <form>
-        <label for="nom">Nombre:</label>
-        <input type="text" id="nom" placeholder="Escruba su nombre" autocomplete="on" autofocus required>
+        
+        <div class="nome">
+        <input type="text" id="nom" autocomplete="on" placeholder="Nombre" autofocus required>
 
-        <label for="ape">Apellido:</label>
-        <input type="text" placeholder="Escruba su apellido" id="ape"  autocomplete="off" required>
+        <input type="text" id="ape"  autocomplete="off" placeholder="Apellido" required>
+        </div>
         <br>
-    <label for="correo">Correo electrónico</label>
-    <input type="email" id="correo" multiple>
+    
+    <input type="email" id="correo" placeholder="Correo electrónico"  multiple required>
     <br>
-    <label for="pass">Contraseña</label>
-    <input type="password" id="pass" maxlength="12" minlength="4" >
+    
+    <input type="password" id="passw" placeholder="Contraseña" required>
     <br>
-    <label for="pass">Mostrar</label>
-    <input type="password" id="pass" maxlength="12" minlength="4" >
-   
-    <h4>Registrarse</h4>
+
+    <input type="password" id="passw" maxlength="12" minlength="4" placeholder="Confirmar contraseña" required>
+
+    <div class="registrar">
+        <input type="checkbox" id="info" required>
+        <label for=" aceptarPolitica" class="checkbox-label">Estoy de acuerdo con las <strong>política de privacidad.</strong></label>
+       
+    </div>
+     <div class="regis">
+    <input type="submit"  value="Registrarse">
+     </div>
     </form>
 </article>
+
   </section>
  </main>
  <aside class="redes">

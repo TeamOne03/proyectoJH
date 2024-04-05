@@ -58,29 +58,56 @@
 
  <main><!-- Aki esta el area de mantenimiento -->
    <section id="servicio">
-        <div class="contenedor">      
             <article id="area__servicios">
                 <h2 class="titulo">Servicios </h2>                   
                 <!-- Esto es para poder buscar en el area de Servicio. -->
                     <div class="search-container">
-                        <input type="text" placeholder="Buscar...">
-                        <button type="submit">Buscar</button>
-                </div>
+                        <form class="barra">
+                            <input type="text" placeholder="Buscar...">
+                            <button type="submit"><img src="imagenes/search-alt-regular-24 (1).png" alt=""></button>
+                        </form>
+                    </div>
                 <!-- Lo que ofrecemos en el area de mantanimiento -->
-                <h2 class="control--riego"> Control y programación de riego</h2>
-                    <p>Gracias al programador y a los sistemas de riego de válvulas Bluetooth de Gardena se puede ahorrar agua y disfrutar plenamente del jardín. Estos sistemas permiten contar con un jardín conectado y controlado en todo momento, porque cada gota de agua cuenta.</p>
-                    <figure>
+                <div class="control--riego">
+                <h2>Control y programación de riego</h2>
+                </div> 
+            <figure class="riego__control">
+                <div class="img__riego">
+                                       
                         <img src="imagenes/sisema de riego.jpg" alt="">
-                    </figure>
+                        <p>Gracias al programador y a los sistemas de riego de válvulas Bluetooth de Gardena se puede ahorrar agua y disfrutar plenamente del jardín. Estos sistemas permiten contar con un jardín conectado y controlado en todo momento, porque cada gota de agua cuenta.</p>
+                    </div>
 
-                    <p>En estos últimos años la tecnología se ha incorporado al cuidado de nuestro jardín, y ahora mantener los espacios perfectos nunca había sido tan sencillo, gracias al programador y a los sistemas de riego de válvulas Bluetooth de Gardena. Actualmente, es la tecnología Bluetooth la que hace su aparición por su facilidad de configuración y de uso. Los dispositivos conectados a través de conexión Bluetooth permiten un control instantáneo de hasta 10 metros. GARDENA ofrece una amplia y completa gama de productos para el riego, que se pueden configurar a través de esta aplicación como la línea de riego con un Programador de riego con batería 9V, el Sensor de Humedad y la Válvula de riego 9V Bluetooth.</p>
-
-                    <figure>
-                        <img src="imagenes/sistema de riego2.jpg" alt="">
+                    <div class="riego__img"> 
+                        <p>En estos últimos años la tecnología se ha incorporado al cuidado de nuestro jardín, y ahora mantener los espacios perfectos nunca había sido tan sencillo, gracias al programador y a los sistemas de riego de válvulas Bluetooth de Gardena. Actualmente, es la tecnología Bluetooth la que hace su aparición por su facilidad de configuración y de uso. Los dispositivos conectados a través de conexión Bluetooth permiten un control instantáneo de hasta 10 metros. GARDENA ofrece una amplia y completa gama de productos para el riego, que se pueden configurar a través de esta aplicación como la línea de riego con un Programador de riego con batería 9V, el Sensor de Humedad y la Válvula de riego 9V Bluetooth.</p>              
+                        <img src="imagenes/sistema de riego2.jpg" alt="">                                                 
+                    </div>
+                    
+                    <div class="img__riego">
                         <img src="imagenes/Gardena-riego-Bluetooth-WEB1.jpg" alt="">
+                    </div>
                     </figure>
             </article>
         </div>
+
+        <article class="formulario__cotizar">
+            <p>¡Cotiza tu proyecto!</p>
+            <form>
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email">
+                <br>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <label for="ape">Apellido</label>
+                <input type="text" id="ape" name="apellido">
+                <br>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </article>
     </section>
  </main>
  <aside class="redes">

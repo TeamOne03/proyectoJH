@@ -59,43 +59,65 @@
  <main> 
     <!-- Aki esta el area de mantenimiento -->
  <section id="servicio">
-        <div class="contenedor">      
+        <!-- <div class="contenedor">       -->
             <article id="area__servicios">
                 <h2 class="titulo">Servicios </h2>                   
                 <!-- Esto es para poder buscar en el area de Servicio. -->
-                    <div class="search-container">
-                        <input type="text" placeholder="Buscar...">
-                        <button type="submit">Buscar</button>
-                </div>
+                     <div class="search-container">
+                         <form class="barra">
+                             <input type="text" placeholder="Buscar...">
+                             <button type="submit"><img src="imagenes/search-alt-regular-24 (1).png" alt=""></button>
+                         </form>
+                     </div>
                 <!-- Lo que ofrecemos en el area de mantanimiento -->
-                <h2 class="sistema--riego"> Revisión sistemas de riego</h2>
-
-                    <figure>
+                <div class="sistema__riego">
+                <h2> Revisión sistemas de riego</h2>
+                </div>
+                    <figure class="sistema__img">
+                        <div class="img__sistema">
                         <img src="imagenes/sistema.jpg" alt="">
-                    </figure>
-                    <strong>Sistemas de riego en el servicio de jardinería</strong>
-                    <p>Cada jardín es un mundo y posee diferentes características de ubicación, emplazamiento, suelo, orientación y demás factores, que determinarán qué sistema de riego se adapta mejor.</p>
-            </article>
-            <article>
-                <strong id="comentario">Un buen sistema de riego efectivo debe estar diseñado por expertos conocedores de las necesidades hídricas de cada zona.</strong>
-                <p>El objetivo de los sistemas de riego es favorecer el crecimiento de las plantas, su prosperidad y reunir las condiciones de humedad y nutrición necesarias.</p>
-                 <button type="submit" class="button--1">SOLICITAR UN PROSUPUESTO</button>
-            </article>
-            <article>
-                <figure>
+                    <p>Cada jardín es un mundo y posee diferentes características de ubicación, emplazamiento, suelo, orientación y demás factores, que determinarán qué sistema de riego se adapta mejor.
+                        <br>
+                        <br>
+                   El objetivo de los sistemas de riego es favorecer el crecimiento de las plantas, su prosperidad y reunir las condiciones de humedad y nutrición necesarias.</p>
+                    </div>
+
+                <div class="riego__img">
                     <img src="imagenes/sistema2.jpg" alt="">
+               </div>
+
+               <div class="texto">
+                <p>Existen, por lo tanto, distintos sistemas de riego en jardinería que aplican distintas técnicas:</p>
+                </div>
+
+                <div class="texto__">
+                <p><strong>Riego con aspersores</strong>: se aplica el agua en forma de lluvia sobre la totalidad de la superficie. Alcanzan distancias de hasta 15 metros.</p>
+                <p><strong>Riego por difusión</strong>: se utilizan para superficies más pequeñas, expandiendo el riego en menos superficie que el aspersor. Proporcionan agua constante y uniforme en superficies elegidas.</p>
+                <p><strong>Riego por goteo</strong>. Aporta agua al pie de la planta de manera localizada. Mantienen muy bien la humedad en la zona, racionalizando el riego.</p>
+                <p><strong>Cintas de exudación</strong>: cañerías hechas de material poroso. El agua se filtra a través de los poros de forma homogénea formando una línea continua de humedad.</p>
+                <p><strong>Riego subterráneo.</strong> Cañerías perforadas enterradas bajo suelo utilizando el mismo funcionamiento que el riego por goteo, pero en este caso la cañería se encuentra enterrada y el agua está en contacto con las raíces.</p>
+                <p><strong>Riego por manguera</strong>. La manguera permite un control del flujo en una zona concreta. Es ideal para zonas pequeñas y delicadas.</p>
+                </div>
                 </figure>
-                <strong>¿Con qué sistemas de riego contamos en Casaplanta?</strong>
-                <i>Existen, por lo tanto, distintos sistemas de riego en jardinería que aplican distintas técnicas:</i>
-                <p>Riego con aspersores: se aplica el agua en forma de lluvia sobre la totalidad de la superficie. Alcanzan distancias de hasta 15 metros.</p>
-                <p> Riego por difusión: se utilizan para superficies más pequeñas, expandiendo el riego en menos superficie que el aspersor. Proporcionan agua constante y uniforme en superficies elegidas.</p>
-                <p> Riego por goteo. Aporta agua al pie de la planta de manera localizada. Mantienen muy bien la humedad en la zona, racionalizando el riego.</p>
-                <p> Cintas de exudación: cañerías hechas de material poroso. El agua se filtra a través de los poros de forma homogénea formando una línea continua de humedad.</p>
-                <p> Riego subterráneo. Cañerías perforadas enterradas bajo suelo utilizando el mismo funcionamiento que el riego por goteo, pero en este caso la cañería se encuentra enterrada y el agua está en contacto con las raíces.</p>
-                <p> Riego por manguera. La manguera permite un control del flujo en una zona concreta. Es ideal para zonas pequeñas y delicadas.</p>
-                <button type="submit" class="button--2">CONTACTA YA</button>
             </article>
-        </div>
+        <article class="formulario__cotizar">
+            <p>¡Cotiza tu proyecto!</p>
+            <form>
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email">
+                <br>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <label for="ape">Apellido</label>
+                <input type="text" id="ape" name="apellido">
+                <br>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </article>
     </section>
  </main>
  <aside class="redes">
