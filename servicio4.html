@@ -8,8 +8,10 @@
     <meta name="keywords" content="Jardinería, Servicios de Jardinería, Plantas, Jardin">
     <link rel="icon" href="imagenes/iconoverde.png">
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- Link del css falta -->
 </head>
 <body>
+    <div id="contenedor">
     <header>
         <a href="index.html">
             <figure class="logo__Empresa">
@@ -19,20 +21,21 @@
         <!--<h1>Jardinería Hernández</h1>-->
         <nav class="menu">
             <!-- Menu-->
+        
             <ul class="menu__horizontal">
                 <li class="menu__Empresa"><a href="index.html">Inicio</a></li>
-                <li class="menu__Empresa"><a href="servicios.html">Servicios</a>
+                <li class="menu__Empresa"><a href="servicio1.html">Servicios</a>
                     <ul class="menu__vertical">
-                        <li><a href="servicio1.html">Mantenimiento</a></li>
-                        <li><a href="servicio2.html">Diseño de Jardines</a></li>
-                        <li><a href="servicio3.html">Poda de plantas</a></li>
-                        <li><a href="servicio4.html">Abonado</a></li>
-                        <li><a href="servicio5.html">Sistemas de detección de plagas</a></li>
-                        <li><a href="servicio6.html">Tratamiento fitosanitario</a></li>
-                        <li><a href="servicio7.html">Eliminación de malas hierbas</a></li>
-                        <li><a href="servicio8.html">Revisión sistemas de riego</a></li>
-                        <li><a href="servicio9.html">Supervisión, reparación e intalación de césped artificial</a></li>
-                        <li><a href="servicio10.html">Control y programación de riego</a></li>
+                      <li><a href="servicio2.html">Mantenimiento</a></li>
+                      <li><a href="servicio3.html">Diseño de Jardine</a></li>
+                      <li><a href="servicio4.html">Poda de Plantas</a></li>
+                      <li><a href="servicio5.html">Abonado</a></li>
+                      <li><a href="servicio6.html">Sistema de Deteccion de Plaga</a></li>
+                      <li><a href="servicio7.html">Tratamiento Fitosanitario</a></li>
+                      <li><a href="servicio8.html">Eliminación de Malas Hierbas</a></li>
+                      <li><a href="servicio9.html">Revisión Sistema de Riego</a></li>
+                      <li><a href="servicio10.html">Supervisión, Reparación e Intalación de Cesped Artificial</a></li>
+                      <li><a href="servicio11.html">Control y Programación de Riego</a></li>
                     </ul>
                 </li>
                 <li class="menu__Empresa"><a href="catálogo.html">Catálogo</a>
@@ -51,70 +54,88 @@
                 <li class="menu__Empresa"><a href="usuario.html">Usuario</a></li>
             </ul>
         </nav>
-    <!-- Esto es para poder buscar en el area de Servicio. -->
-        <div class="search-container">
-            <input type="text" placeholder="Buscar...">
-            <button type="submit">Buscar</button>
-    </div>
  </header>
- <div id="contenedor">
-    <main> 
-        <!-- Aki esta el area de mantenimiento -->
-        <section id="servicio"> 
-            <h1 class="titulo">Servicios</h1>            
-                <article class="abonado">
-                    <h3>Abonado del Jardin</h3>
-                    <figure>
-                    <img src="imagenes/abonado del jardin.jpg" alt="">
+
+ <main> 
+    <!-- Aki esta el area de mantenimiento -->
+   <section id="servicio">
+            <article id="area__servicios">
+                <h2 class="titulo">Servicios </h2>                   
+                <!-- Esto es para poder buscar en el area de Servicio. -->
+                      <div class="search-container">
+                          <form class="barra">
+                              <input type="text" placeholder="Buscar...">
+                              <button type="submit"><img src="imagenes/search-alt-regular-24 (1).png" alt=""></button>
+                          </form>
+                      </div>
+             
+                <div class="img__poda">
+                   <h3>Poda de Plantas</h3>
+                    <h4>¿Necesitas podar un árbol o arbusto?</h4>
+
+                        <div class="parra">
+                         <p> Nuestro equipo de profesionales en cortar árboles y arbustos te ayudará a que ya no sea una preocupación más para ti. Muchas veces los proyectos de poda de árboles son compliados debido a la altura y cantidad de árboles, nosotros te recomendamos que se realice un mantenimiento periódicamente a los árboles. Nuestro servicio incluye:  Corte del árbol  retiro de las ramas.</p>
+                         </div>
+
+                    <figure class="poda__img">
+                       <div class="img_">
+                        <img src="imagenes/podadeplanta.jpg" alt="">
+                        <p>El mantenimiento y la poda en su momento de árboles y arbustos hacen su jardín mucho más atractivos y los árboles más fuertes.</p>
+                        </div>
+                        <div class="img__">
+                             <p>La poda de plantas es esencial para el cuidado adecuado de tus vegetales. Algunos tipos
+                                de poda incluyen:
+                                <br>
+                                <br>
+                                Poda de Formación: Se realiza al principio del crecimiento para dar forma adecuada a la
+                                planta.
+                                Poda de Saneamiento: Elimina ramas muertas o enfermas.
+                                Poda de Fructificación: Mejora la producción de flores y frutos.
+                                Poda de Rejuvenecimiento: Revitaliza plantas maduras.
+                                Poda tras la Floración: Mantiene la forma y estimula futuras flores.
+                                <br>
+                                Recuerda que la poda es tanto ciencia como arte. ¡Cuida tus plantas con conocimiento y
+                                cariño! 🌿🌱</p>
+                        <img src="imagenes/podadeplanta2.jpg" alt="">
+                        </div>
+                        <div class="img_">
+                        <img src="imagenes/podadeplanta3.jpg" alt="">
+                        <p>La poda de plantas es una técnica de jardinería que implica la eliminación controlada de partes de una planta, como ramas, brotes o flores. Los objetivos principales de la poda son promover el crecimiento saludable, mejorar la forma de la planta y controlar su tamaño.
+                            <br>
+                            <br>
+                            Algunas razones comunes para podar plantas incluyen:
+                            <br>
+                            <br>
+                            Eliminar ramas muertas, enfermas o dañadas.
+                            Estimular el crecimiento de nuevas ramas y brotes.
+                            Controlar el tamaño y la forma de la planta.
+                            Mejorar la floración y la producción de frutos.
+                            Prevenir enfermedades al eliminar partes infectadas.
+                            Es importante realizar la poda en el momento adecuado según la especie de planta y el objetivo deseado. Además, es fundamental utilizar herramientas de poda adecuadas y mantenerlas limpias y afiladas para evitar dañar la planta.</p>
+                        </div>
                     </figure>
-                    <p>El jardín de tu casa puede estar formado por distintos elementos vegetales: césped, árboles, arbustos, flores, rosaledas, trepadoras, estanques, etc. A su vez, cada una de estas formaciones estará compuesta por distintas variedades de plantas, y cada una de ellas requerirá de los nutrientes necesarios para su correcto desarrollo.</p>
-                    <button type="submit" class="button_1">SOLICITAR UN PROSUPUESTO</button>
+                </div>
+           </article>
     
-                    <figure>
-                        <h4>¿Por qué es necesario abonar el jardín?</h4>
-                        <img src="imagenes/abonado del jardin.jpg2.jpg" alt="">
-                     </figure>
-                       <p> Como hemos comentado, las plantas requieren de nutrientes para desarrollarse bien. El sustrato necesita ser enriquecido regularmente, mediante el aporte de fertilizantes.
-                        Además, tus plantas se someten a diferentes exigencias a lo largo del año: podas y recortes, siegas, pisoteos, etc. </p>
-                        
-                        <p>Gracias al abono de jardín para plantas estaremos brindando la energía suficiente para superar este tipo de adversidades y mantener un ciclo vital sano. una buena fertilización implementará defensas en tus plantas, para que estas sean capaces de resistir a las numerosas plagas y enfermedades. </p>
-    
-                        <p>Por último, es necesario abonar el jardín también por una cuestión estética. Tus plantas lucirán vigorosas, fuertes, llenas de vida y color, gracias a los elementos nutricionales proporcionados por los fertilizantes.</p>
-                        
-                        <button type="submit" class="button_2">CONTACTA YA</button>
-                   
-    
-                    <figure>
-                        <h4>Época para abonar el jardín</h4>
-                        <img src="imagenes/Abonadojardin3.jpg" alt="">
-                     </figure>
-                        <p>Lo más probables es que tengas dudas acerca de cuándo abonar tu jardín. En Casaplanta Vigo, te despejamos las dudas acerca de este tema.</p>
-    
-                            <p>En cuanto al abonado del césped, se debe realizar 1 o 2 días después de la siega, siendo necesario que este esté seco. Una vez finalizado, es importante un riego regular para evitar posibles quemaduras.</p>
-                            
-                            <p>Por otra parte, el abono para plantas se ha de llevar a cabo durante toda la temporada de crecimiento, coincidiendo con las estaciones de primavera y de verano. En un clima donde no hay otoño ni invierno, es recomendable abonar durante los meses de más calor y menos lluvia.</p>
-    
-                            <button type="submit" class="button_3">ME INTERESA</button>              
-                </article>
-            </div> 
-        </section>
-     </main>
-     <aside class="redes">
-            <h3 class="sub__redes">Siguenos en:</h3>
-            <figure class="img__redes">
-                <!-- Enlace en el logo de la aplicacion, ademas ese instagram es real de la compañia -->
-                <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                    <img src="imagenes/instgram.png" alt="instagram" width="50">
-                </a>
-                <!--<a href="https://www.youtube.com" target="_blank">
-                    <img src="imagenes/youtube.png" alt="YouTube" width="35">
-                </a>
-                
-                Este apartado lo deje para ver si creo un mini canal en youtube con los videos que tengo.-->
-            </figure>
-        </aside>
- </div>
+    </section>
+ </main>
+ <aside class="redes">
+        <h3 class="sub__redes">Siguenos en:</h3>
+        <figure class="img__redes">
+            <!-- Enlace en el logo de la aplicacion, ademas ese instagram es real de la compañia -->
+            <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="imagenes/instgram.png" alt="instagram" width="50">
+            </a>
+            <!--<a href="https://www.youtube.com" target="_blank">
+                <img src="imagenes/youtube.png" alt="YouTube" width="35">
+            </a>
+            
+            Este apartado lo deje para ver si creo un mini canal en youtube con los videos que tengo.-->
+        </figure>
+    </aside>
     <footer class="footer">
         <p class="texto__footer">&copy; Todos los derechos reservados - Jardinería Hernández 2024.</p>
     </footer>
+ 
+    </div>
 </body>

@@ -8,8 +8,10 @@
     <meta name="keywords" content="Jardinería, Servicios de Jardinería, Plantas, Jardin">
     <link rel="icon" href="imagenes/iconoverde.png">
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- Link del css falta -->
 </head>
 <body>
+    <div id="contenedor">
     <header>
         <a href="index.html">
             <figure class="logo__Empresa">
@@ -19,20 +21,21 @@
         <!--<h1>Jardinería Hernández</h1>-->
         <nav class="menu">
             <!-- Menu-->
+            
             <ul class="menu__horizontal">
                 <li class="menu__Empresa"><a href="index.html">Inicio</a></li>
-                <li class="menu__Empresa"><a href="servicios.html">Servicios</a>
+                <li class="menu__Empresa"><a href="servicio1.html">Servicios</a>
                     <ul class="menu__vertical">
-                        <li><a href="servicio1.html">Mantenimiento</a></li>
-                        <li><a href="servicio2.html">Diseño de Jardines</a></li>
-                        <li><a href="servicio3.html">Poda de plantas</a></li>
-                        <li><a href="servicio4.html">Abonado</a></li>
-                        <li><a href="servicio5.html">Sistemas de detección de plagas</a></li>
-                        <li><a href="servicio6.html">Tratamiento fitosanitario</a></li>
-                        <li><a href="servicio7.html">Eliminación de malas hierbas</a></li>
-                        <li><a href="servicio8.html">Revisión sistemas de riego</a></li>
-                        <li><a href="servicio9.html">Supervisión, reparación e intalación de césped artificial</a></li>
-                        <li><a href="servicio10.html">Control y programación de riego</a></li>
+                      <li><a href="servicio2.html">Mantenimiento</a></li>
+                      <li><a href="servicio3.html">Diseño de Jardine</a></li>
+                      <li><a href="servicio4.html">Poda de Plantas</a></li>
+                      <li><a href="servicio5.html">Abonado</a></li>
+                      <li><a href="servicio6.html">Sistema de Deteccion de Plaga</a></li>
+                      <li><a href="servicio7.html">Tratamiento Fitosanitario</a></li>
+                      <li><a href="servicio8.html">Eliminación de Malas Hierbas</a></li>
+                      <li><a href="servicio9.html">Revisión Sistema de Riego</a></li>
+                      <li><a href="servicio10.html">Supervisión, Reparación e Intalación de Cesped Artificial</a></li>
+                      <li><a href="servicio11.html">Control y Programación de Riego</a></li>
                     </ul>
                 </li>
                 <li class="menu__Empresa"><a href="catálogo.html">Catálogo</a>
@@ -51,47 +54,74 @@
                 <li class="menu__Empresa"><a href="usuario.html">Usuario</a></li>
             </ul>
         </nav>
-   <!-- Esto es para poder buscar en el area de Servicio. -->
-        <div class="search-container">
-            <input type="text" placeholder="Buscar...">
-            <button type="submit">Buscar</button>
-    </div>
  </header>
-<div id="contenedor">
-    <main> 
-        <!-- Aki esta el area de mantenimiento -->
-        <section id="servicio">
-            <h1 class="titulo">Servicios</h1>
-        
-               <article class="poda--planta">
-                <h3>Poda de Plantas</h3>
-                <h4>¿Necesitas podar un árbol o arbusto?</h4>
-                   <p> Nuestro equipo de profesionales en cortar árboles y arbustos te ayudará a que ya no sea una preocupación más para ti. Muchas veces los proyectos de poda de árboles son compliados debido a la altura y cantidad de árboles, nosotros te recomendamos que se realice un mantenimiento periódicamente a los árboles. Nuestro servicio incluye:  Corte del árbol  retiro de las ramas.</p>
-                   <figure>
-                    <img src="imagenes/podadeplanta.jpg" alt="">
-                    <img src="imagenes/podadeplanta2.jpg" alt="">
-                    <img src="imagenes/podadeplanta3.jpg" alt="">
-                   </figure>
-               </article>
+
+ <main> 
+    <!-- Aki esta el area de mantenimiento -->
+  <section id="servicio">
+        <!-- <div class="contenedor">       -->
+            <article id="area__servicios">
+                <h2 class="titulo">Servicios </h2>                   
+                <!-- Esto es para poder buscar en el area de Servicio. -->
+                      <div class="search-container">
+                          <form class="barra">
+                              <input type="text" placeholder="Buscar...">
+                              <button type="submit"><img src="imagenes/search-alt-regular-24 (1).png" alt=""></button>
+                          </form>
+                      </div>
+           
+                <h3 class="sub__diseño">Diseños de Jardines</h3>
+
+               <div class="diseño__img">
+                <figure class="img__diseño">
+                <img src="imagenes/diseñodejardin.jpg" alt="">
+                </figure> 
+            </div> 
+                <div class="para">
+                <p >El diseño y la decoración de exteriores te permitirá darle vida a tu negocio, hogar, jardín, terraza o patio, mediante la creación de una estancia exterior perfecta tanto estética como funcionalmente.
+                <br>
+                Si estás buscando una tienda de decoración de exteriores, en Jardinería Hernández tenemos muchísimas ideas para decorar tu jardín.
+                    Nuestras ideas se adaptan siempre a las nuevas tendencias y están enfocadas al diseño de espacios exteriores llenos de felicidad.
+                    
+                    Zonas chill out, estilos minimalistas, ibicencos, modernos, decoración para casas de playa o de campo, para exteriores con piscina, para chalets, decoración con luces, con piedras, con plantas, muebles para jardín, etc. Infinitas posibilidades para poder darte todo lo que necesitas.
+               </div>
+        </article>
+    </div>
+
+        <article class="img__jardines">
+
+            <figure class="img2__diseño">
+            <div class="jardin__formal">
+            <img src="imagenes/diseño2.webp" alt="">
+            <!-- <h3>Frances</h3> -->
+           </div>
+            <div class="jardin__formal2">
+            <img src="imagenes/diseño3.jpg" alt="">
+            <!-- <h3>Formal</h3> -->
             </div>
-        </section>
-     </main>
-     <aside class="redes">
-            <h3 class="sub__redes">Siguenos en:</h3>
-            <figure class="img__redes">
-                <!-- Enlace en el logo de la aplicacion, ademas ese instagram es real de la compañia -->
-                <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                    <img src="imagenes/instgram.png" alt="instagram" width="50">
-                </a>
-                <!--<a href="https://www.youtube.com" target="_blank">
-                    <img src="imagenes/youtube.png" alt="YouTube" width="35">
-                </a>
-                
-                Este apartado lo deje para ver si creo un mini canal en youtube con los videos que tengo.-->
             </figure>
-        </aside>
-</div>
+        </article>
+        
+    </section>
+ </main>
+ <aside class="redes">
+        <h3 class="sub__redes">Siguenos en:</h3>
+        <figure class="img__redes">
+            <!-- Enlace en el logo de la aplicacion, ademas ese instagram es real de la compañia -->
+            <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="imagenes/instgram.png" alt="instagram" width="50">
+            </a>
+            <!--<a href="https://www.youtube.com" target="_blank">
+                <img src="imagenes/youtube.png" alt="YouTube" width="35">
+            </a>
+            
+            Este apartado lo deje para ver si creo un mini canal en youtube con los videos que tengo.-->
+        </figure>
+    </aside>
     <footer class="footer">
         <p class="texto__footer">&copy; Todos los derechos reservados - Jardinería Hernández 2024.</p>
     </footer>
+ 
+    </div>
 </body>
+</html>

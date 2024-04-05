@@ -8,8 +8,10 @@
     <meta name="keywords" content="Jardinería, Servicios de Jardinería, Plantas, Jardin">
     <link rel="icon" href="imagenes/iconoverde.png">
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.con/712575d4w5.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="contenedor">
     <header>
         <a href="index.html">
             <figure class="logo__Empresa">
@@ -19,20 +21,25 @@
         <!--<h1>Jardinería Hernández</h1>-->
         <nav class="menu">
             <!-- Menu-->
+            <!-- <input type="checkbox" id="check">    
+            <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src="imagenes/bars-solid.svg" alt=""></i>
+            </label> -->
+            
             <ul class="menu__horizontal">
                 <li class="menu__Empresa"><a href="index.html">Inicio</a></li>
-                <li class="menu__Empresa"><a href="servicios.html">Servicios</a>
+                <li class="menu__Empresa"><a href="servicio1.html">Servicios</a>
                     <ul class="menu__vertical">
-                        <li><a href="servicio1.html">Mantenimiento</a></li>
-                        <li><a href="servicio2.html">Diseño de Jardines</a></li>
-                        <li><a href="servicio3.html">Poda de plantas</a></li>
-                        <li><a href="servicio4.html">Abonado</a></li>
-                        <li><a href="servicio5.html">Sistemas de detección de plagas</a></li>
-                        <li><a href="servicio6.html">Tratamiento fitosanitario</a></li>
-                        <li><a href="servicio7.html">Eliminación de malas hierbas</a></li>
-                        <li><a href="servicio8.html">Revisión sistemas de riego</a></li>
-                        <li><a href="servicio9.html">Supervisión, reparación e intalación de césped artificial</a></li>
-                        <li><a href="servicio10.html">Control y programación de riego</a></li>
+                      <li><a href="servicio2.html">Mantenimiento</a></li>
+                      <li><a href="servicio3.html">Diseño de Jardine</a></li>
+                      <li><a href="servicio4.html">Poda de Plantas</a></li>
+                      <li><a href="servicio5.html">Abonado</a></li>
+                      <li><a href="servicio6.html">Sistema de Deteccion de Plaga</a></li>
+                      <li><a href="servicio7.html">Tratamiento Fitosanitario</a></li>
+                      <li><a href="servicio8.html">Eliminación de Malas Hierbas</a></li>
+                      <li><a href="servicio9.html">Revisión Sistema de Riego</a></li>
+                      <li><a href="servicio10.html">Supervisión, Reparación e Intalación de Cesped Artificial</a></li>
+                      <li><a href="servicio11.html">Control y Programación de Riego</a></li>
                     </ul>
                 </li>
                 <li class="menu__Empresa"><a href="catálogo.html">Catálogo</a>
@@ -51,52 +58,118 @@
                 <li class="menu__Empresa"><a href="usuario.html">Usuario</a></li>
             </ul>
         </nav>
-     <!-- Esto es para poder buscar en el area de Servicio. -->
-        <div class="search-container">
-            <input type="text" placeholder="Buscar...">
-            <button type="submit">Buscar</button>
-    </div>
+       
  </header>
-    <div id="contenedor">
-    <main>
-        <!-- Aki esta el area de mantenimiento -->
-        <section id="servicio">
-                <h1 class="titulo">Servicios</h1>            
-                    <article class="area__mantenimiento">
-                    <!-- Lo que ofrecemos en el area de mantanimiento -->
-                    <h2 class="sub__titulo1"> Mantenimiento</h2>
-                    <p class="parrafo"> El servicio de mantención de jardines que brindamos en Jardinería Hernández, “El Jardinero”, abarca todas las labores relacionadas con el cuidado del jardín.</p>
-    
-                        <p>Ofrecemos a nuestros clientes asesoría en el cuidado de jardines y apoyo logístico.
-                        Contamos con personal altamente calificado y todos los equipos especializados necesarios para realizar una mantención de jardín de calidad.</p> 
-                        
-                        <p> El servicio de mantención integral de jardines incluye servicios de mano de obra y no incluye materiales adicionales que pueden ser adquiridos por el cliente y/o por “El Jardinero”.</p>
-    
-                        <figure>
-                            <img src="imagenes/maquinadecorte" alt="">
-                            <img src="imagenes/maquinacorte2.jpg" alt="">
+
+ <main>
+    <!-- Aki esta el area de servicio -->
+    <section id="servicio">
+            <article id="area__servicios">
+                <h2 class="titulo">Servicios </h2>                   
+                <!-- Esto es para poder buscar en el area de Servicio. -->
+                      <div class="search-container">
+                          <form class="barra">
+                              <input type="text" placeholder="Buscar...">
+                              <button type="submit"><img src="imagenes/search-alt-regular-24 (1).png" alt=""></button>
+                          </form>
+                      </div>
+                <!-- <ul id="servicios"> -->
+                    <div class="servicios">
+                        <figure class="servicios__img">
+                            <a href="servicio2.html"><img src="imagenes/Mantenimientolits.jpg" alt="mantenimiento" class="servicio__img">
+                             <div class="texto__ser">
+                                <h3>Mantenimiento</h3>
+                            </div>
+                            </a>
+                           
                         </figure>
-                </article>
-            </div> 
-        </section>
-     </main>
-     <aside class="redes">
-            <h3 class="sub__redes">Siguenos en:</h3>
-            <figure class="img__redes">
-                <!-- Enlace en el logo de la aplicacion, ademas ese instagram es real de la compañia -->
-                <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                    <img src="imagenes/instgram.png" alt="instagram" width="50">
-                </a>
-                <!--<a href="https://www.youtube.com" target="_blank">
-                    <img src="imagenes/youtube.png" alt="YouTube" width="35">
-                </a>
-                
-                Este apartado lo deje para ver si creo un mini canal en youtube con los videos que tengo.-->
-            </figure>
-        </aside>
-    </div>
+                        <figure class="servicios__img">
+                            <a href="servicio3.html"><img src="imagenes/diseñolist.jpg" alt="diseño de jardines"
+                                class="servicio__img">
+                            <div class="texto__ser">
+                                <h3>Diseños de Jardines</h3>
+                            </div>
+                            </a>
+                        </figure>
+                        <figure class="servicios__img">
+                            <a href="servicio4.html"><img src="imagenes/podalist.png" alt="poda de planta"class="servicio__img">
+                            <div class="texto__ser">
+                                <h3>Poda de planta</h3>
+                            </div>
+                           </a>
+                        </figure>
+                        <figure class="servicios__img">
+                            <a href="servicio5.html"><img src="imagenes/abonadolist.jpg" alt="abonado"class="servicio__img">
+                            <div class="texto__ser">
+                                <h3>Abonado</h3>
+                            </div>
+                            </a>
+                        </figure>
+                        <figure class="servicios__img">
+                            <a href="servicio6.html"><img src="imagenes/sistemalist.jpg"alt="sistema de detecion de plagas" class="servicio__img">
+                            <div class="texto__ser">
+                                <h3>Sitema de Detección de Plagas</h3>
+                            </div>
+                            </a>
+                        </figure>
+                        <figure class="servicios__img">
+                            <a href="servicio7.html"><img src="imagenes/tratamientolist.jpg"alt="tratamiento fitosanitario" class="servicio__img">
+                            <div class="texto__ser">
+                                <h3>Tratamiento Fitosanitario</h3>
+                            </div>
+                            </a>
+                        </figure>
+                        <figure class="servicios__img">
+                            <a href="servicio8.html"><img src="imagenes/malashierbaslist.jpg"alt="eliminacio de malas hierbas" class="servicio__img">
+                            <div class="texto__ser">
+                                <h3>Eliminación de Mala Hierbas</h3>
+                            </div>
+                            </a>
+                        </figure>
+                        <figure class="servicios__img">
+                            <a href="servicio9.html"><img src="imagenes/descarga (1).jpg"alt="revisión sistemas de riego" class="servicio__img">
+                            <div class="texto__ser">
+                                <h3>Revisión de Sistema de Riego</h3>
+                            </div>
+                            </a>
+                        </figure>
+                        <figure class="servicios__img">
+                            <a href="servicio10.html"><img src="imagenes/cespedlist.jpg" alt=""class="servicio__img">
+                            <div class="texto__ser">
+                                <h3>Supervisión, Reparación e Instalación de Césped Artificial</h3>
+                            </div>
+                            </a>
+                        </figure>
+                        <figure class="servicios__img">
+                            <a href="servicio11.html"><img src="imagenes/riegolist.jpg" alt=""class="servicio__img">
+                            <div class="texto__ser">
+                                <h3>Control y Programación de Riego</h3>
+                            </div>
+                            </a>
+                        </figure>
+                        </div>
+                <!-- </ul> -->
+            </article>
+    </section>
+ </main>
+ <aside class="redes">
+        <h3 class="sub__redes">Siguenos en:</h3>
+        <figure class="img__redes">
+            <!-- Enlace en el logo de la aplicacion, ademas ese instagram es real de la compañia -->
+            <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="imagenes/instgram.png" alt="instagram" width="50">
+            </a>
+            <!--<a href="https://www.youtube.com" target="_blank">
+                <img src="imagenes/youtube.png" alt="YouTube" width="35">
+            </a>
+            
+            Este apartado lo deje para ver si creo un mini canal en youtube con los videos que tengo.-->
+        </figure>
+    </aside>
     <footer class="footer">
         <p class="texto__footer">&copy; Todos los derechos reservados - Jardinería Hernández 2024.</p>
     </footer>
- </body>
+ 
+    </div>
+</body>
 </html>

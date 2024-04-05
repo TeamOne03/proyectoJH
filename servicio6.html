@@ -8,8 +8,10 @@
     <meta name="keywords" content="Jardinería, Servicios de Jardinería, Plantas, Jardin">
     <link rel="icon" href="imagenes/iconoverde.png">
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- Link del css falta -->
 </head>
 <body>
+    <div id="contenedor">
     <header>
         <a href="index.html">
             <figure class="logo__Empresa">
@@ -19,20 +21,21 @@
         <!--<h1>Jardinería Hernández</h1>-->
         <nav class="menu">
             <!-- Menu-->
+            
             <ul class="menu__horizontal">
                 <li class="menu__Empresa"><a href="index.html">Inicio</a></li>
-                <li class="menu__Empresa"><a href="servicios.html">Servicios</a>
+                <li class="menu__Empresa"><a href="servicio1.html">Servicios</a>
                     <ul class="menu__vertical">
-                        <li><a href="servicio1.html">Mantenimiento</a></li>
-                        <li><a href="servicio2.html">Diseño de Jardines</a></li>
-                        <li><a href="servicio3.html">Poda de plantas</a></li>
-                        <li><a href="servicio4.html">Abonado</a></li>
-                        <li><a href="servicio5.html">Sistemas de detección de plagas</a></li>
-                        <li><a href="servicio6.html">Tratamiento fitosanitario</a></li>
-                        <li><a href="servicio7.html">Eliminación de malas hierbas</a></li>
-                        <li><a href="servicio8.html">Revisión sistemas de riego</a></li>
-                        <li><a href="servicio9.html">Supervisión, reparación e intalación de césped artificial</a></li>
-                        <li><a href="servicio10.html">Control y programación de riego</a></li>
+                      <li><a href="servicio2.html">Mantenimiento</a></li>
+                      <li><a href="servicio3.html">Diseño de Jardine</a></li>
+                      <li><a href="servicio4.html">Poda de Plantas</a></li>
+                      <li><a href="servicio5.html">Abonado</a></li>
+                      <li><a href="servicio6.html">Sistema de Deteccion de Plaga</a></li>
+                      <li><a href="servicio7.html">Tratamiento Fitosanitario</a></li>
+                      <li><a href="servicio8.html">Eliminación de Malas Hierbas</a></li>
+                      <li><a href="servicio9.html">Revisión Sistema de Riego</a></li>
+                      <li><a href="servicio10.html">Supervisión, Reparación e Intalación de Cesped Artificial</a></li>
+                      <li><a href="servicio11.html">Control y Programación de Riego</a></li>
                     </ul>
                 </li>
                 <li class="menu__Empresa"><a href="catálogo.html">Catálogo</a>
@@ -50,58 +53,89 @@
                 <li class="menu__Empresa"><a href="carrito.html">carrito</a></li>
                 <li class="menu__Empresa"><a href="usuario.html">Usuario</a></li>
             </ul>
-        </nav>
-    <!-- Esto es para poder buscar en el area de Servicio. -->
-        <div class="search-container">
-            <input type="text" placeholder="Buscar...">
-            <button type="submit">Buscar</button>
-    </div>
+        </nav>     
  </header>
- <div id="contenedor">
-    <main> 
-        <!-- Aki esta el area de mantenimiento -->
-        <section class="servicio">
-            <h1 class="titulo">Servicios</h1>    
-                <article class="fitosanitario">
-                    <h2 class="sub__tratamiento"> Tratamiento Fitosanitario</h2>
-    
-                        <h4>¿Por qué hacer un tratamiento fitosanitario en el jardín?</h4>
-                        <figure>
-                           <img src="imagenes/fitosanitario.jpg" alt="">
-                        </figure>
-    
-                        <p>El tratamiento fitosanitario en el jardín viene de la prevención y curación de las enfermedades de las plantas o relacionado con ello. En todo jardín es necesario un tratamiento fitosanitario correcto.</p>
-    
-                        <p> Objetivos del tratamiento fitosanitario
-                        Los tratamientos fitosanitarios se centran principalmente en la erradicación completa, la prevención y el control de plagas que sean perjudiciales para la salud y el crecimiento saludable de las plantas y sembradíos en huertos y jardines.</p>
-    
-                        <p> Si queremos resumir, los objetivos de combatir las plagas invasoras y enfermedades podemos decir que son:</p>
-    
-                        <img src="imagenes/bxs-right-arrow.svg" alt=""><figcaption><p> <strong> Erradicar enfermedades</strong> en árboles y plantas que puedan afectar su resistencia e integridad.</p></figcaption>
-    
-                        <img src="imagenes/bxs-right-arrow.svg" alt=""><figcaption><p> <strong> Prevenir y minimizar</strong> los riesgos en las enfermedades de sembradíos.</p></figcaption>
-    
-                        <img src="imagenes/bxs-right-arrow.svg" alt=""><figcaption><p> <strong> Evitar la propagación</strong> o ingreso de plagas en nuestros jardines y huertos.</p></figcaption>
-                </article>
-            </div>
-        </section>
-     </main>
-     <aside class="redes">
-            <h3 class="sub__redes">Siguenos en:</h3>
-            <figure class="img__redes">
-                <!-- Enlace en el logo de la aplicacion, ademas ese instagram es real de la compañia -->
-                <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                    <img src="imagenes/instgram.png" alt="instagram" width="50">
-                </a>
-                <!--<a href="https://www.youtube.com" target="_blank">
-                    <img src="imagenes/youtube.png" alt="YouTube" width="35">
-                </a>
+
+ <main> 
+    <!-- Aki esta el area de mantenimiento -->
+   <section id="servicio">
+        <!-- <div class="contenedor">       -->
+            <article id="area__servicios">
+                <h2 class="titulo">Servicios </h2>                   
+                <!-- Esto es para poder buscar en el area de Servicio. -->
+                      <div class="search-container">
+                          <form class="barra">
+                              <input type="text" placeholder="Buscar...">
+                              <button type="submit"><img src="imagenes/search-alt-regular-24 (1).png" alt=""></button>
+                          </form>
+                      </div>
+                <div class="sub__plaga">
+                <h2> Sistema de detección de plagas</h2>
+                <h3>Tecnología autónoma para la detección real de plagas</h3>
+                <figure class="img__plagas">
+                    <div class="plaga__img">
+                    <img src="imagenes/plagas.jpg" alt="">
+                </div>
                 
-                Este apartado lo deje para ver si creo un mini canal en youtube con los videos que tengo.-->
-            </figure>
-        </aside>
- </div>
+                <p>Una vez detectada e identificada la plaga presente en el cultivo, el dueño de la plantación es avisado en tiempo real a través de su App móvil</p>
+                <br>
+                <p>RapidAIM es un sistema digital de vigilancia y control de plagas para la agricultura, que utiliza nuevos sensores que detectan la presencia de insectos en un entorno determinado. Los sensores actúan con un sistema de capacitancia y son capaces de detectar cuando los insectos entran en la trampa y luego diferenciarlos. </p>
+                <p>El monitoreo a distancia
+                   Una vez detectada e identificada la plaga presente en el cultivo y gracias al avance de internet en la agricultura, se suben los datos a la nube digital y el dueño de la plantación es avisado instantáneamente en su móvil de lo que ocurre en su finca. Otro factor importante es que los sensores son de baja potencia y funcionan con una simple batería, lo que significa que el sistema es competitivo en precio con otros tipos de control como el monitoreo manual, enviando una información confiable de la población de plagas en tiempo real.</p>
+                   <p>Esta increíble herramienta, permite también el control a nivel regional de plagas problemáticas para los cultivos, lo cual funciona como sistema de alarma en el caso de plagas provenientes de otras zonas y los productores pueden alertarse con tiempo ante posibles futuros ataques.</p>
+                    <br>
+                <p>La presencia real es lo que importa</p>
+                <p>El hecho de identificar la verdadera presencia de la plaga en el cultivo, determina que es el momento desde el cual se deben comenzar a tomar medidas y no aplicar fitosanitarios en fechas determinadas a calendario como se estaba trabajando para asegurar el control sin una certeza en concreto. Sin dudas, esto trae aparejado un ahorro de tiempo y dinero particularmente, ya que solamente se aplica en caso de ser necesario.</p>
+
+                <p>En lo que respecta al manejo de plagas, el uso de RapidAIM permite evaluar con eficacia el funcionamiento de otras formas de control, como es el uso de productos biológicos o microbianos, evitando el exceso de fitosanitarios que podrían perder eficacia con el tiempo y hasta generar resistencia de la plaga, como es el caso de las piretrinas de formulación química.
+                 </p>
+
+                    <div class="img-plaga">
+                    <img src="imagenes/plagas2.jpg" alt="">
+                    </div>
+                 </figure>
+                </div>
+            </article>
+        <!-- </div> -->
+
+        <article class="formulario__cotizar">
+            <p>¡Cotiza tu proyecto!</p>
+            <form>
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email">
+                <br>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <label for="ape">Apellido</label>
+                <input type="text" id="ape" name="apellido">
+                <br>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </article>
+    </section>
+ </main>
+ <aside class="redes">
+        <h3 class="sub__redes">Siguenos en:</h3>
+        <figure class="img__redes">
+            <!-- Enlace en el logo de la aplicacion, ademas ese instagram es real de la compañia -->
+            <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="imagenes/instgram.png" alt="instagram" width="50">
+            </a>
+            <!--<a href="https://www.youtube.com" target="_blank">
+                <img src="imagenes/youtube.png" alt="YouTube" width="35">
+            </a>
+            
+            Este apartado lo deje para ver si creo un mini canal en youtube con los videos que tengo.-->
+        </figure>
+    </aside>
     <footer class="footer">
         <p class="texto__footer">&copy; Todos los derechos reservados - Jardinería Hernández 2024.</p>
     </footer>
+ 
+    </div>
+</div>
 </body>
