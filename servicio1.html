@@ -8,68 +8,242 @@
     <meta name="keywords" content="Jardinería, Servicios de Jardinería, Plantas, Jardin">
     <link rel="icon" href="imagenes/iconoverde.png">
     <link rel="stylesheet" href="css/estilos.css">
-    <!-- Link del css falta -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    
 </head>
 <body>
     <div id="contenedor">
     <header>
-        <a href="index.html">
             <figure class="logo__Empresa">
-                <img src="imagenes/logoNombre.jpg" alt="Logo de la Jardinería Hernández" title="Logo de la Jardinería Hernández">
+                <a href="index.html"><img src="imagenes/logoNombre.jpg" alt="Logo de la Jardinería Hernández" title="Logo de la Jardinería Hernández"></a>
             </figure>
-        </a>
-        <!--<h1>Jardinería Hernández</h1>-->
-        <nav class="menu">
-            <!-- Menu-->
-            <details>
-            <ul>
-                <li class="menu__Empresa"><a href="index.html">Inicio</a></li>
-                <li class="menu__Empresa"><a href="servicios.html">Servicios</a></li>
-                <li class="menu__Empresa"><a href="#">Catalogo</a></li>
-                <li class="menu__Empresa"><a href="proyectos.html">Proyectos</a></li>
-                <li class="menu__Empresa"><a href="#">Consejos</a></li>
-                <li class="menu__Empresa"><a href="preguntas0.html">Pregunta Frecuentes</a></li>
-                <li class="menu__Empresa"><a href="#">Nosotros</a></li>
-                <!--Aqui aun no pongo el nombre de las demas paginas html, cuando ya tenga nombres pues lo coloco en el href-->
-            </ul>
-        </details>
 
-        </nav>
-    <form class="busqueda">
-        <!-- Esto es para poder buscar en el area de Servicio. -->
-        <input type="text" class="sub__busqueda" placeholder="Buscar">
-        <figure class="lupa__bx">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAd5JREFUSEu11cvLTWEUx/HPGxnIpSiXiZAwcIuSAQpFL2XqUgxIURhQBv4AMiEhDCgk5Q+Q0VsImSAlopTIgFwi9+uz6nl1HO/e5xnssya7zn7O+j5rrd9v7R5djp4u51cHmIB1WInZ+SJ3cAkX8LzkcgMBRuAcVtck+I2L2IRPdaB2wFDcwgx8xUkcxpOcZDJ2YQuG5LOL8L0K0g44iw14hhV4UPHHWbicLjAeB7G7BDAT9/Aj9Xk+ot91sRhX8A2T8GKgw60VHMF2HMWOkgHiPNYnyF7s7wR4jCm5//cLAUvQh2vpGRX9F60VfEQMeRB+FQJGpWpf4w1GdwK8x3AMQ8BKIs5+wCuM6QS4mw01L3ngdkn2pKQFSW03c5uWdQIcSKbZgxPYVgg4kzyyMbUnBLKzE2AqHuJnoUzDYFdz0sqq2412Ktv/KZYnCT6qqGRONtrY7PatJUaLM62r4guO41B2dryPKmNVbMbgnDRmEK6PYdfKtP/lyGygVTVzeJd20b7U0rWYm12/FPH7P1G3ridml/Yids/nrK4bOIa3CB+E0WKdhwpDSeGJv9HEBycg1zEdsQ0W4mU/oQlA5AqThaKm5fmcbhoQ+cal9b4mfz8abVGtJ5tqUSWk64A/OxFWGSrrSC8AAAAASUVORK5CYII="/>
-        <!-- Esto largo que se ve aki es el logo de lupa.  -->
-        </figure>
-    </form>
+             <div class="flecha"><i class="fa fa-arrow-left"></i></div>
+        
+        <!--<h1>Jardinería Hernández</h1>-->
+     <nav>
+        <div class="abreMenu"><i class="fa fa-ellipsis-v"></i></div>          
+            <ul class="menu__horizontal">
+                <li class="menu__Empresa"><a href="index.html">Inicio</a></li>
+                <li class="menu__Empresa"><a href="servicio1.html">Servicios</a></li>
+                
+                <li class="menu__Empresa"><a href="catálogo.html">Catálogo</a>
+                    <ul class="menu__vertical">
+                        <li><a href="plantas.html">Plantas</a></li>
+                        <li><a href="fertilizantes.html">Fertilizantes</a></li>
+                        <li><a href="herramientas.html">herramientas</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li class="menu__Empresa"><a href="proyectos.html">Proyectos</a></li>
+                <li class="menu__Empresa"><a href="consejos.html">Consejos</a></li>
+                <li class="menu__Empresa"><a href="contactos.html">Contacto</a></li>
+                <li class="menu__Empresa"><a href="nosotros.html">Nosotros</a></li>
+                <li class="menu__Empresa"><a href="carrito.html">carrito</a></li>
+                <li class="menu__Empresa"><a href="usuario.html">Usuario</a></li>
+                <div class="cierraMenu"><i class="fa fa-times"></i></div>
+                <span class="iconos">
+                    <!-- <i class="fab fa-facebook"></i> -->
+                     <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <!-- <i class="fab fa-twitter"></i>
+                    <i class="fab fa-github"></i> -->
+                </span>
+            </ul>
+    </nav>
+    <script src="js/app.js"></script>
+       
  </header>
 
  <main>
     <!-- Aki esta el area de servicio -->
-    <section id="servicio">
-        <div class="contenedor">      
-            <article id="area__servicios">
-                <h1 class="titulo">Servicios</h1>
-                <p><strong>¿Qué necesitas?</strong></p>
-                <ul id="servicios">
-                    <li class="menu__servicios"><a href="mantenimiento.html"> Mantenimiento</a></li>
-                    <li class="menu__servicios"><a href="diseño.html"> Diseño de Jardines</a></li>
-                    <li class="menu__servicios"><a href="podaDePlanta.html">Poda de plantas</a> </li>
-                    <li class="menu__servicios"><a href="abonado.html"> Abonado</a></li>
-                    <li class="menu__servicios"><a href="sistemaDeDeteccionDePlaga.html"> Sistemas de detección de plagas</a></li>
-                    <li class="menu__servicios"><a href="tratamientoFitosanitario.html"> Tratamiento fitosanitario</a></li>
-                    <li class="menu__servicios"><a href="eliminaciónDeMalahierba.html"> Eliminación de malas hierbas</a></li>
-                    <li class="menu__servicios"><a href="revisionSistemaDeRiesgo.html">Revisión sistemas de riego</a> </li>
-                    <li class="menu__servicios"><a href="Supervisiónreparacióneintalacióndecéspedartificial.html"> Supervisión, reparación e intalación de césped artificial</a></li>
-                    <li class="menu__servicios"><a href="controlyProgramaciónderiego.html"> Control y programación de riego</a></li>
-                </ul>
+    <section>
+            <article class="servicio">
+                <h2 class="titulo">Servicios </h2>                   
+                <!-- Esto es para poder buscar en el area de Servicio. -->
+                      <div class="search-container">
+                          <form class="barra">
+                              <input type="text" placeholder="Buscar...">
+                              <button type="submit"><img src="imagenes/search-alt-regular-24 (1).png" alt=""></button>
+                          </form>
+                      </div>
 
-                 <figure>
-                    <img src="imagenes/mantenimiento-integral-de-exteriores.jpg" alt="">
-                </figure>
+                    <div class="servicios">
+                        <figure class="servicios__img">
+                            <img src="imagenes/foto-jardineros-471019.jpg" alt="mantenimiento">
+                             <div class="intro">
+                                <h3>Mantenimiento</h3>
+                                <p>1. Recortar y dar forma a arbustos.
+                                    <br>
+                                   2. Eliminar las malas hierbas.
+                                   <br>
+                                   3. Aplicar fertilizantes para proporcionar nutrientes.
+                                   <br>
+                                   4. Recojida de basura.
+                                </p>
+                                <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                            </div>
+                                                      
+                        </figure> 
+
+                        <figure class="servicios__img">
+                            <img src="imagenes/diseñolist.jpg" alt="diseño de jardines">
+                            <div class="intro">
+                                <h3>Diseños de jardines</h3>
+                                <p>
+                                    1. Diseño y construcción de jardines.
+                                    <br>
+                                    2. Servicio de control biológico de plagas.
+                                    <br>
+                                    3. Mantenimiento de área verdes.
+                                    <br>
+                                    4. Servicio de traslado y poda de alboles.
+                                </p>
+                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                            </div>
+                            
+                        </figure>
+
+                        <figure class="servicios__img">
+                            <img src="imagenes/podalist.png" alt="poda de planta">
+                            <div class="intro">
+                                <h3>Poda de planta</h3>
+                                <p>
+                                    1. Recorte de arboles y arbustos.
+                                    <br>
+                                    2. Forma de plantas.
+                                    <br>
+                                    3. Eliminación de ramas o brotes que puendan causar daño.
+                                    <br>
+                                    4. Estimular la floración.
+                                </p>
+                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                            </div>
+                           
+                        </figure>
+
+                        <figure class="servicios__img">
+                            <img src="imagenes/abonadolist.jpg" alt="abonado">
+                            <div class="intro">
+                                <h3>Abonado</h3>
+                                <p>
+                                    1. Identificar las necesidades de las plantas 
+                                    <br>
+                                    2. Selección de abono. 
+                                    <br>
+                                    3. Epoca de abonado.
+                                    <br>
+                                    4. Aplicación del abono.
+                                </p>
+                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                            </div>
+                           
+                        </figure>
+
+                        <figure class="servicios__img">
+                           <img src="imagenes/sistemalist.jpg"alt="sistema de detecion de plagas">
+                            <div class="intro">
+                                <h3>Sistema de detección de plagas</h3>
+                                <p>
+                                    1. Desinfección.
+                                    <br>
+                                    2. Desratización.
+                                    <br>
+                                    3. Desinsectación.
+                                    <br>
+                                    4. Fumigación.
+                                </p>
+                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                            </div>
+                           
+                        </figure>
+
+                        <figure class="servicios__img">
+                            <img src="imagenes/tratamientolist.jpg"alt="tratamiento fitosanitario" >
+                            <div class="intro">
+                                <h3>Tratamiento fitosanitario</h3>
+                                <p>
+                                    1. Herbicidas.
+                                    <br>
+                                    2. Insecticidas.
+                                    <br>
+                                    3. Acricidas.
+                                    <br>
+                                    4. Bactericidas.
+                                </p>
+                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                            </div>
+                           
+                        </figure>
+
+                        <figure class="servicios__img">
+                            <img src="imagenes/malashierbaslist.jpg"alt="eliminacio de malas hierbas">
+                            <div class="intro">
+                                <h3>Eliminación de mala hierbas</h3>
+                                <p>
+                                    1. Deshierbar
+                                    <br>
+                                    2. Arrancado a mano.
+                                    <br>
+                                    3. Productos qumicos.
+                                    <br>
+                                    4. Control cultural.
+                                </p>
+                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                            </div>
+                           
+                        </figure>
+                        <figure class="servicios__img">
+                           <img src="imagenes/sistema_de_riego.jpeg"alt="revisión sistemas de riego">
+                            <div class="intro">
+                                <h3>Revisión de sistema de riego</h3>
+                                <p>
+                                    1. Sistema de filtrado.
+                                    <br>
+                                    2. Sistema de riego.
+                                    <br>
+                                    3. Mangueras de polietileno.
+                                    <br>
+                                    4. Revisin de riego.
+                                </p>
+                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                            </div>
+                        </figure>
+
+                        <figure class="servicios__img">
+                            <img src="imagenes/cespedlist.jpg" alt="">
+                            <div class="intro">
+                                <h3>Supervisión, reparación e instalación de césped artificial</h3>
+                                <p>
+                                    1. Instalación de cesped y cesped artificial.
+                                    <br>
+                                    2. Reparación de cesped.
+                                    <br>
+                                    3. Supervición de cesped.
+                                </p>
+                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                            </div>
+                            
+                        </figure>
+
+                        <figure class="servicios__img">
+                            <img src="imagenes/riego_cultivos-scaled.jpg" alt="">
+                            <div class="intro">
+                                <h3>Control y programación de riego</h3>
+                                <p>
+                                    1. Fertilización.
+                                    <br>
+                                    2. Riego adecuado. 
+                                    <br>
+                                    3. Control de maleza.
+                                    <br>
+                                    4. Aireación del suelo.
+                                </p>
+                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                            </div>
+                           
+                        </figure>
+                    </div>
             </article>
-        </div> 
     </section>
  </main>
  <aside class="redes">
